@@ -1,20 +1,30 @@
 //Try
 $(document).ready(function () {
-  var prevScrollY = 0; // Variable to store the previous scroll position
-
-  $(window).scroll(function () {
-    var scrollY = $(window).scrollTop();
-
-    // Check if the user is scrolling down
-    if (scrollY > prevScrollY) {
-      // Scrolling down, show the sidebar
-      $("#fixedSidebar").css("top", "0px");
-    } else {
-      // Scrolling up, hide the sidebar
-      $("#fixedSidebar").css("top", "-100%");
-    }
-
-    // Update the previous scroll position
-    prevScrollY = scrollY;
+    var isMidrightVisible = false; // .midright is currently visible
+    var lastScrollY = 0;
+  
+    $(window).scroll(function () {
+      var scrollY = $(window).scrollTop();
+  
+      if (!isMidrightVisible && scrollY > 700) {
+        // Show .midright
+        $(".midright").css("top", "0px");
+        isMidrightVisible = true;
+      } else if (isMidrightVisible && scrollY <= 700) {
+        // Hide .midright
+        $(".midright").css("top", "-100%");
+        isMidrightVisible = false;
+      }
+  
+      if (scrollY < lastScrollY) {
+        // Scrolling up
+        if (!isMidrightVisible && scrollY < 700) {
+          // Show .midright when scrolling up
+          $(".midright").css("top", "0px");
+          isMidrightVisible = true;
+        }
+      }
+  
+      lastScrollY = scrollY;
+    });
   });
-});
