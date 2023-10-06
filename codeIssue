@@ -1,1 +1,20 @@
-/
+//Try
+$(document).ready(function () {
+  var prevScrollY = 0; // Variable to store the previous scroll position
+
+  $(window).scroll(function () {
+    var scrollY = $(window).scrollTop();
+
+    // Check if the user is scrolling down
+    if (scrollY > prevScrollY) {
+      // Scrolling down, show the sidebar
+      $("#fixedSidebar").css("top", "0px");
+    } else {
+      // Scrolling up, hide the sidebar
+      $("#fixedSidebar").css("top", "-100%");
+    }
+
+    // Update the previous scroll position
+    prevScrollY = scrollY;
+  });
+});
