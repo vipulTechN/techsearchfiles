@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,133 +6,96 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name= "robots" content= "INDEX, FOLLOW">
-  <meta name="google-site-verification" content="R_quuJbshDy5Rs1i5qkHn4VesYMm5d4hpF4ix5uUUx0" />
-  
-  <link rel="shortcut icon" href="{% static 'images/1.png' %}">
-  <!-- <link rel="stylesheet" type="text/css" href={% static "css/sliderbase.css" %}> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+  rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{% static 'css/master.min.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/color.min.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'css/icons.css' %}">
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
-
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/remixicon.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
   {% block head_block %}{% endblock %}
-  
-<style>
-.logo{color:#172661;font-size:200px;height:51px;margin-top:-11%;width:112%}.item h4{font-size:19px;line-height:1.375em;font-weight:400;font-style:italic;margin:70px 0}@media only screen and (min-width:1200px){.feedback{width:100%;border-radius:34px;margin-left:50%}}@media screen and (max-width:600px){.feedback{width:180%;border-radius:34px;margin-left:-50%}}.item span{font-style:normal}.navbar{margin-bottom:0;background-image:linear-gradient(#1faac9,#053a59);z-index:9999;border:0;font-size:12px!important;line-height:1.42857143!important;letter-spacing:4px;border-radius:0;font-family:Montserrat,sans-serif}.navbar .navbar-brand,.navbar li a{color:#fff!important}.navbar-nav li a:hover,.navbar-nav li.active a{color:#172661!important;background-color:#fff!important}.navbar-default .navbar-toggle{border-color:transparent;color:#fff!important;margin-top:4%}.dropbtn{background-color:transparent;color:#fff;padding:16px;font-size:16px;border:none;cursor:pointer}.dropbtn:focus,.dropbtn:hover{background-color:transparent}.dropdown{position:relative;display:inline-block}.dropdown-content{display:none;position:absolute;background-color:#172661;min-width:160px;overflow:auto;box-shadow:0 8px 16px 0 rgba(0,0,0,.2);z-index:1}.dropdown-content a{color:#000;padding:12px 16px;text-decoration:none;display:block}.dropdown a:hover{background-color:#ddd}body{margin:0;height:2000px}.navbarr{overflow:hidden;background-color:transparent}.navbarr a{float:left;font-size:16px;color:#fff;text-align:center;padding:14px 16px;text-decoration:none}.subnavv{float:left;overflow:hidden}.subnavv .subnavbtnn{font-size:16px;border:none;outline:0;color:#fff;padding:14px 16px;background-color:inherit;font-family:inherit;margin:0;font-weight:bolder}.navbarr a:hover,.subnavv:hover .subnavbtnn{background-color:#fff;color:#172661}.subnav-contentt{display:none;position:absolute;left:0;background-image: linear-gradient(#1faac9,#053a59);;width:100%;z-index:1}.subnav-contentt a{float:left;color:#fff;text-decoration:none}.subnav-contentt a:hover{background-color:#eee;color:#000}.subnavv:hover .subnav-contentt{display:block}.cardd{box-shadow:0 4px 8px 0 rgba(0,0,0,.2);transition:.3s;width:100px}.cardd:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,.2)}.containerr{padding:2px 16px;background-color:#fff}.navbar-default .navbar-nav>li>a{font-weight:bolder}.aq{transition:.3s}.aq:active,.aq:focus,.aq:hover{outline:0;text-decoration:none}.footerv{position:relative;padding-top:45px;background:#121518}.footerv .footer-about,.footerv .footer-contact,.footerv .footer-links,.footerv .footer-project{position:relative;margin-bottom:45px;color:#999}.footerv .footer-about h3,.footerv .footer-contact h3,.footerv .footer-links h3,.footerv .footer-project h3{position:relative;margin-bottom:20px;padding-bottom:10px;font-size:20px;font-weight:600;color:#eee}.footerv .footer-about h3::after,.footerv .footer-contact h3::after,.footerv .footer-links h3::after,.footerv .footer-project h3::after{position:absolute;content:"";width:50px;height:2px;left:0;bottom:0;background:#eee}.footerv .footer-social{position:relative;margin-top:20px}.footerv .footer-social .aq{text-align:center;color:#999;font-size:14px;border:1px solid #999;display:inline-block;width:35px;height:35px;padding:6px 0;border-radius:35px}.footerv .footer-social .aq:hover{color:#fff;background:#0085ff;border-color:#0085ff}.footerv .footer-contact p{margin-bottom:10px;font-size:16px;color:#999}.footerv .footer-contact i{margin-right:10px;font-size:16px;color:#999}.footerv .footer-contact .aq:last-child i{margin:0}.footerv .footer-contact .aq:hover i{color:#0085ff}.footerv .footer-links .aq{margin-bottom:6px;padding-left:15px;color:#999;display:block}.footerv .footer-links .aq:last-child{margin:0}.footerv .footer-links .aq:hover{color:#0085ff}.footerv .footer-links .aq::before{position:absolute;font-family:"Font Awesome 5 Free";font-weight:900;left:0}.footerv .footer-project{float:left;font-size:0}.footerv .footer-project .aq{padding:0 8px 8px 0;display:block;width:33.33%;float:left}.footerv .footer-project .aq img{width:100%}.footerv .footer-newsletter{text-align:center;color:#999;margin-bottom:35px;max-width:700px}.footerv .footer-newsletter input{background:rgba(256,256,256,.15);margin-bottom:15px;height:35px;border:none;border-radius:5px}.footerv .footer-newsletter .btn{font-weight:400;text-transform:uppercase;color:#fff;background:#e9414a;border-radius:5px;display:block;width:100%;height:35px;font-size:14px;border:none;transition:.3s}.footerv .footer-newsletter .btn:hover{color:#0085ff;background:#fff}.footerv .footer-newsletter .btn:focus{box-shadow:none}.footerv .copyright{position:relative;padding:25px 0;background:#000}.footerv .copyright .copy-text p{margin:0;font-size:16px;font-weight:400;color:#999}.footerv .copyright .copy-text p .aq{color:#0085ff;text-decoration:none}.footerv .copyright .copy-text p .aq:hover{color:#ff008c}.footerv .copyright .copy-menu{position:relative;font-size:0;text-align:right}.footerv .copyright .copy-menu .aq{margin-right:15px;padding-right:15px;border-right:1px solid rgba(255,255,255,.3);color:#999;font-size:16px;font-weight:400}.footerv .copyright .copy-menu .aq:hover{color:#0085ff}.footerv .copyright .copy-menu .aq:last-child{margin-right:0;padding-right:0;border-right:none}@media (max-width:767.98px){.footerv .copyright .copy-menu,.footerv .copyright .copy-text{text-align:center}.footerv .copyright .copy-text p{margin-bottom:5px}}.dropdownjk{position:relative;display:inline-block}.dropdown-contentjk{display:none;position:absolute;background-color:#f9f9f9;min-width:160px;box-shadow:0 8px 16px 0 gray;padding:12px 16px;z-index:1}.dropdownjk:hover .dropdown-contentjk{display:block}#myBtnaa{display:none;position:fixed;bottom:20px;right:30px;z-index:99;font-size:18px;border:none;outline:0;background-color:red;color:#000;cursor:pointer;padding:15px;border-radius:100px}#myBtnaa:hover{background-color:#87ceeb}.feedback{background-color:#31b0d5;color:#fff;padding:10px 20px;border-radius:4px;border-color:#46b8da;background-image:linear-gradient(to bottom left,#1faac9,#053a59)}#mybutton{position:fixed;bottom:4px;right:-80px;margin-right:54%;width:27%;z-index:1}.formx{margin:-1px auto 0;margin-left:29%;margin-top:4%}.search_barj{background:#fff;border:#b7b7b7 solid 1px;border-radius:3px;box-shadow:0 0 3px #ccc;position:relative;font-family:'Source Sans Pro',sans-serif;max-width:420px}.search_barj .inputi[type=text]{border:none;box-shadow:none;font-weight:600;font-size:14px;width:80%;padding:.5em;margin:0;overflow:hidden}.search_barj .inputi[type=text]:focus{outline:0}.search_barj .buttonj[type=submit]{background:linear-gradient(#237cd4,#1e6ab5);color:rgba(255,255,255,0);border:1px solid #1c62a8;width:10%;min-width:38px;position:absolute;top:-1px;right:-1px;bottom:-1px;border-radius:0 3px 3px 0;margin:0;user-select:none}.search_barj .buttonj[type=submit]:after{content:'';position:absolute;top:18%;right:0;bottom:22%;left:4%;background:url("#") no-repeat center center;background-size:contain}.search_barj .buttonj[type=submit]:focus,.search_barj .buttonj[type=submit]:hover{background:linear-gradient(#38d,#2174c7);box-shadow:0 0 3px rgba(0,0,0,.5);cursor:pointer}.search_barj .search_dropdownj{font-weight:600;min-width:17px;background:linear-gradient(#f4f4f4,#e2e2e2);border-right:1px solid #ddd;color:#555;padding:0 28px 0 13px;border-radius:2px 0 0 2px;position:absolute;top:0;left:0;bottom:0;z-index:10000;user-select:none;box-sizing:content-box}.search_barj .search_dropdownj:after{content:"\2193";color:rgba(85,85,85,0);background:url("#") no-repeat top left;height:8px;width:10px;position:absolute;top:50%;right:10px;margin-top:-6px}.search_barj .search_dropdownj.active,.search_barj .search_dropdownj:hover{background:linear-gradient(#e7e7e7,#d5d5d5);cursor:pointer;border-right-color:#ccc}.search_barj .search_dropdownj>span{position:absolute;top:50%;margin-top:-8px;white-space:nowrap;font-size:15px}.search_barj .search_dropdownj ul{display:none;position:absolute;top:105%;left:-1px;font-size:14px;width:225px;background:#fff;box-shadow:1px 1px 5px rgba(0,0,0,.2);border:1px solid #ccc;border-radius:3px;padding:7px 0}.search_barj .search_dropdownj li{list-style-type:none;margin:0;padding:5px 18px;color:#1c62a8;line-height:1.2em;position:relative}.search_barj .search_dropdownj li:hover{background:#e7e7e7}.search_barj.smallj{max-width:180px}.search_barj .search_dropdownj li.selectedj{background:#1c62a8;color:#fff}.search_barj.smallj .inputi[type=text]{font-size:13px}::placeholder{font-weight:400}@media (min-width:768px){.navbar-header{float:left;margin-right:-15px;width:30%}}@media only screen and (min-width:1030px) and (max-width:1605px){.search_barj.smallj{max-width:306px}.formx{margin-left:29%;margin-top:4%}}@media (max-width:786px){.icon-bar12{display:none}}
-.search_barj .buttonj[type=submit]::after{content:'';display:inline-block;width:34px;height:27px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M17.293 15.707l-4.586-4.586c0.677-0.897 1.083-1.997 1.083-3.121 0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5c1.124 0 2.224-0.406 3.121-1.083l4.586 4.586c0.391 0.391 1.023 0.391 1.414 0s0.391-1.023 0-1.414zM9 15c-3.859 0-7-3.141-7-7s3.141-7 7-7 7 3.141 7 7-3.141 7-7 7z' fill='%23FFFFFF'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:30px 28px;z-index:9999}
-/*Fixed Call Button Css Start From Here*/.fixedcall{position:fixed;width:180px;height:45px;margin:0;padding:0;top:48%;right:-135px;z-index:999;border-radius:10px 0 0 10px;overflow:hidden;background:#fff;-webkit-transition:.4s;-moz-transition:.4s;-o-transition:.4s;transition:.4s}.fixedcall a{display:block;font-size:14px;line-height:16px;text-align:left;font-weight:600;letter-spacing:.6px;text-decoration:none;color:#fff;margin:0;padding:0;-webkit-transition:.4s;-moz-transition:.4s;-o-transition:.4s;transition:.4s}.fixedcall a span{width:45px;height:45px;float:left;background:#3e7fb9;font-size:25px;margin:0 15px 0 0;text-align:center;line-height:45px;color:#fff}.fixedcall a p{margin:0;padding:7px;color:#3e7fb9}.fixedcall a svg{color:#fff;-webkit-animation:1.25s infinite tada;-moz-animation:1.25s infinite tada;-ms-animation:tada 1.25s infinite;animation:1.25s infinite tada}.fixedcall:hover{right:0}.imagesIcon.icon_phonex {background-position: -85px -229px;}
-</style>
-
-</head>
-<body oncontextmenu="return false">
-    <!-- End Google Tag Manager (noscript) -->
-  <!-- <button onclick="topFunction()" id="myBtnaa" title="Go to top"><i class='fa fa-arrow-up' style='font-size:24px;color: darkcyan;'></i>
-  </button> -->
-  <!-- fixed Call BUtton -->
-  <div class="fixedcall">
-    <a class="phonenumber" href="tel:6360016550"><span><i class="imagesIcon icon_phonex"></i></span><p>Call     Now<br>6360016550</p></a>
- </div>
- <!-- Fixed Call Button End -->
-  <div class="short-msg">
-    <a href="#." class="back-to" title="Top"><i class="imagesIcon icon_Up"></i></a>
-  </div>
-  <div class="icon-bar12" style="z-index: 1;margin-top: -2%;">
-    <a href="https://www.facebook.com/searchhomesindia" class="facebook"><i class="fab fa-facebook"></i></a> 
-    <a href="https://twitter.com/SearchhomesIndi" class="twitter"><i class="fab fa-twitter"></i></a> 
-    <a href="https://www.google.com/search?q=search+homes+india&sxsrf=AJOqlzWe-chIuNrkkGE" class="google"><i class="fab fa-google"></i></a> 
-    <a href="https://in.linkedin.com/company/search-homes-india" class="linkedin"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.instagram.com/searchhomesindia_/?igshid=7ipgwp7nfpjf" class="instagram"><i class="fab fa-instagram"></i></a> 
-    <a target="_blank" class="whatsapp" title="WhatsApp" href="https://api.whatsapp.com/send?phone=918147267372&amp;text=I%20am%20looking%20property%20in%20bangalore"><i class="fab fa-whatsapp"></i></a> 
-  </div>
-  <!--LOADER -->     
-  <!-- <div class="loader">
-    <div class="cssload-thecube">
-      <div class="cssload-cube cssload-c1"></div>
-      <div class="cssload-cube cssload-c2"></div>
-      <div class="cssload-cube cssload-c4"></div>
-      <div class="cssload-cube cssload-c3"></div>
-    </div>
-  </div> -->
-  <!--LOADER -->
-<header>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container123">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar" style="background-color: white;"></span>
-          <span class="icon-bar" style="background-color: white;"></span>
-          <span class="icon-bar" style="background-color: white;"></span>
-        </button>
-        <a class="navbar-brand sticky_logo" title="Home-page" href="/"><img loading="lazy" class="logo" src="{% static 'images/finallog.png' %}" alt="Search Homes India Logo"></a>
-        <form class="search_barj smallj formx" id="SearchForm" action="/propertylist/" method="get" style="margin-left: 30%;">
-          <!-- <div class="search_dropdownj" style="width: 16px;">
-            <span>All</span>
-            <ul>
-              <li class="selectedj">All</li>
-              <li>Prestige</li>
-              <li>Assetz</li>
-            </ul>
-          </div> -->
-        
-          <input class="form-control form-control-sm mr-3 w-75 inputi" type="text" id="query" name="query" type="text" placeholder="Type To Search..."/>
-        
-          <button class="btn buttonj" type="submit" value="Search" ></button>
+  <style>
+    /* this  is footer css============== */ .item h4{font-size:19px;line-height:1.375em;font-weight:400;font-style:italic;margin:70px 0}@media only screen and (min-width:1200px){.feedback{width:100%;border-radius:34px;margin-left:50%}}@media screen and (max-width:600px){.feedback{width:180%;border-radius:34px;margin-left:-50%}}.item span{font-style:normal}.navbar{margin-bottom:0;background-image:linear-gradient(#1faac9,#053a59);z-index:9999;border:0;font-size:12px!important;line-height:1.42857143!important;letter-spacing:4px;border-radius:0;font-family:Montserrat,sans-serif}.navbar .navbar-brand,.navbar li a{color:#fff!important}.navbar-nav li a:hover,.navbar-nav li.active a{color:#172661!important;background-color:#fff!important}.navbar-default .navbar-toggle{border-color:transparent;color:#fff!important;margin-top:4%}.dropbtn{background-color:transparent;color:#fff;padding:16px;font-size:16px;border:none;cursor:pointer}.dropbtn:focus,.dropbtn:hover{background-color:transparent}.dropdown{position:relative;display:inline-block}.dropdown-content{display:none;position:absolute;background-color:#172661;min-width:160px;overflow:auto;box-shadow:0 8px 16px 0 rgba(0,0,0,.2);z-index:1}.dropdown-content a{color:#000;padding:12px 16px;text-decoration:none;display:block}.dropdown a:hover{background-color:#ddd}body{margin:0;height:2000px}.navbarr{overflow:hidden;background-color:transparent}.navbarr a{float:left;font-size:16px;color:#fff;text-align:center;padding:14px 16px;text-decoration:none}.subnavv{float:left;overflow:hidden}.subnavv .subnavbtnn{font-size:16px;border:none;outline:0;color:#fff;padding:14px 16px;background-color:inherit;font-family:inherit;margin:0;font-weight:bolder}.navbarr a:hover,.subnavv:hover .subnavbtnn{background-color:#fff;color:#172661}.subnav-contentt{display:none;position:absolute;left:0;background-image: linear-gradient(#1faac9,#053a59);;width:100%;z-index:1}.subnav-contentt a{float:left;color:#fff;text-decoration:none}.subnav-contentt a:hover{background-color:#eee;color:#000}.subnavv:hover .subnav-contentt{display:block}.cardd{box-shadow:0 4px 8px 0 rgba(0,0,0,.2);transition:.3s;width:100px}.cardd:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,.2)}.containerr{padding:2px 16px;background-color:#fff}.navbar-default .navbar-nav>li>a{font-weight:bolder}.aq{transition:.3s}.aq:active,.aq:focus,.aq:hover{outline:0;text-decoration:none}.footerv{position:relative;padding-top:45px;background:#121518}.footerv .footer-about,.footerv .footer-contact,.footerv .footer-links,.footerv .footer-project{position:relative;margin-bottom:45px;color:#999}.footerv .footer-about h3,.footerv .footer-contact h3,.footerv .footer-links h3,.footerv .footer-project h3{position:relative;margin-bottom:20px;padding-bottom:10px;font-size:20px;font-weight:600;color:#eee}.footerv .footer-about h3::after,.footerv .footer-contact h3::after,.footerv .footer-links h3::after,.footerv .footer-project h3::after{position:absolute;content:"";width:50px;height:2px;left:0;bottom:0;background:#eee}.footerv .footer-social{position:relative;margin-top:20px}.footerv .footer-social .aq{text-align:center;color:#999;font-size:14px;border:1px solid #999;display:inline-block;width:35px;height:35px;padding:6px 0;border-radius:35px}.footerv .footer-social .aq:hover{color:#fff;background:#0085ff;border-color:#0085ff}.footerv .footer-contact p{margin-bottom:10px;font-size:16px;color:#999}.footerv .footer-contact i{margin-right:10px;font-size:16px;color:#999}.footerv .footer-contact .aq:last-child i{margin:0}.footerv .footer-contact .aq:hover i{color:#0085ff}.footerv .footer-links .aq{margin-bottom:6px;padding-left:15px;color:#999;display:block}.footerv .footer-links .aq:last-child{margin:0}.footerv .footer-links .aq:hover{color:#0085ff}.footerv .footer-links .aq::before{position:absolute;font-family:"Font Awesome 5 Free";font-weight:900;left:0}.footerv .footer-project{float:left;font-size:0}.footerv .footer-project .aq{padding:0 8px 8px 0;display:block;width:33.33%;float:left}.footerv .footer-project .aq img{width:100%}.footerv .footer-newsletter{text-align:center;color:#999;margin-bottom:35px;max-width:700px}.footerv .footer-newsletter input{background:rgba(256,256,256,.15);margin-bottom:15px;height:35px;border:none;border-radius:5px}.footerv .footer-newsletter .btn{font-weight:400;text-transform:uppercase;color:#fff;background:#e9414a;border-radius:5px;display:block;width:100%;height:35px;font-size:14px;border:none;transition:.3s}.footerv .footer-newsletter .btn:hover{color:#0085ff;background:#fff}.footerv .footer-newsletter .btn:focus{box-shadow:none}.footerv .copyright{position:relative;padding:25px 0;background:#000}.footerv .copyright .copy-text p{margin:0;font-size:16px;font-weight:400;color:#999}.footerv .copyright .copy-text p .aq{color:#0085ff;text-decoration:none}.footerv .copyright .copy-text p .aq:hover{color:#ff008c}.footerv .copyright .copy-menu{position:relative;font-size:0;text-align:right}.footerv .copyright .copy-menu .aq{margin-right:15px;padding-right:15px;border-right:1px solid rgba(255,255,255,.3);color:#999;font-size:16px;font-weight:400}.footerv .copyright .copy-menu .aq:hover{color:#0085ff}.footerv .copyright .copy-menu .aq:last-child{margin-right:0;padding-right:0;border-right:none}@media (max-width:767.98px){.footerv .copyright .copy-menu,.footerv .copyright .copy-text{text-align:center}.footerv .copyright .copy-text p{margin-bottom:5px}}.dropdownjk{position:relative;display:inline-block}.dropdown-contentjk{display:none;position:absolute;background-color:#f9f9f9;min-width:160px;box-shadow:0 8px 16px 0 gray;padding:12px 16px;z-index:1}.dropdownjk:hover .dropdown-contentjk{display:block}#myBtnaa{display:none;position:fixed;bottom:20px;right:30px;z-index:99;font-size:18px;border:none;outline:0;background-color:red;color:#000;cursor:pointer;padding:15px;border-radius:100px}#myBtnaa:hover{background-color:#87ceeb}.feedback{background-color:#31b0d5;color:#fff;padding:10px 20px;border-radius:4px;border-color:#46b8da;background-image:linear-gradient(to bottom left,#1faac9,#053a59)}#mybutton{position:fixed;bottom:4px;right:-80px;margin-right:54%;width:27%;z-index:1}.formx{margin:-1px auto 0;margin-left:29%;margin-top:4%}.search_barj{background:#fff;border:#b7b7b7 solid 1px;border-radius:3px;box-shadow:0 0 3px #ccc;position:relative;font-family:'Source Sans Pro',sans-serif;max-width:420px}.search_barj .inputi[type=text]{border:none;box-shadow:none;font-weight:600;font-size:14px;width:80%;padding:.5em;margin:0;overflow:hidden}.search_barj .inputi[type=text]:focus{outline:0}.search_barj .buttonj[type=submit]{background:linear-gradient(#237cd4,#1e6ab5);color:rgba(255,255,255,0);border:1px solid #1c62a8;width:10%;min-width:38px;position:absolute;top:-1px;right:-1px;bottom:-1px;border-radius:0 3px 3px 0;margin:0;user-select:none}.search_barj .buttonj[type=submit]:after{content:'';position:absolute;top:18%;right:0;bottom:22%;left:4%;background:url("#") no-repeat center center;background-size:contain}.search_barj .buttonj[type=submit]:focus,.search_barj .buttonj[type=submit]:hover{background:linear-gradient(#38d,#2174c7);box-shadow:0 0 3px rgba(0,0,0,.5);cursor:pointer}.search_barj .search_dropdownj{font-weight:600;min-width:17px;background:linear-gradient(#f4f4f4,#e2e2e2);border-right:1px solid #ddd;color:#555;padding:0 28px 0 13px;border-radius:2px 0 0 2px;position:absolute;top:0;left:0;bottom:0;z-index:10000;user-select:none;box-sizing:content-box}.search_barj .search_dropdownj:after{content:"\2193";color:rgba(85,85,85,0);background:url("#") no-repeat top left;height:8px;width:10px;position:absolute;top:50%;right:10px;margin-top:-6px}.search_barj .search_dropdownj.active,.search_barj .search_dropdownj:hover{background:linear-gradient(#e7e7e7,#d5d5d5);cursor:pointer;border-right-color:#ccc}.search_barj .search_dropdownj>span{position:absolute;top:50%;margin-top:-8px;white-space:nowrap;font-size:15px}.search_barj .search_dropdownj ul{display:none;position:absolute;top:105%;left:-1px;font-size:14px;width:225px;background:#fff;box-shadow:1px 1px 5px rgba(0,0,0,.2);border:1px solid #ccc;border-radius:3px;padding:7px 0}.search_barj .search_dropdownj li{list-style-type:none;margin:0;padding:5px 18px;color:#1c62a8;line-height:1.2em;position:relative}.search_barj .search_dropdownj li:hover{background:#e7e7e7}.search_barj.smallj{max-width:180px}.search_barj .search_dropdownj li.selectedj{background:#1c62a8;color:#fff}.search_barj.smallj .inputi[type=text]{font-size:13px}::placeholder{font-weight:400}@media (min-width:768px){.navbar-header{float:left;margin-right:-15px;width:30%}}@media only screen and (min-width:1030px) and (max-width:1605px){.search_barj.smallj{max-width:306px}.formx{margin-left:29%;margin-top:4%}}@media (max-width:786px){.icon-bar12{display:none}}
+    </style>
+    </head>
+    <body oncontextmenu="return false">
+  <!-- <div id="main"> -->
+    <header id="header1" class="fixed-top d-flex align-items-center">
+      <div class="navbar1  container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a class="logoo" href="/"><img src="{% static 'images/SHI.png' %}" loading="lazy" alt="logo"></a>
+        </div>
+        <div id="down1">
+          <form action="" method="post">
+            <div class="bar1">
+              <select class=" dropdown1 form-select " aria-label="Default select example">
+                <option selected>All credential</option>
+                <option value="1">Bangalore</option>
+                <option value="2">Chennai</option>
+                <option value="3">Hyderabad</option>
+              </select>
+              <span class="ver">|</span>
+              <select class="dropdown2 form-select " aria-label="Default select example">
+                <option selected>Buy</option>
+                <option value="1">Rent</option>
+                <option value="2">Pg/Co-living</option>
+                <option value="3">Projects</option>
+              </select>
+              <span class="ver">|</span>
+              <input class="searchbar1" type="text" placeholder="Search 'Your dream home with us'" title="Search">
+              <a href="#"> <i class="voice1 ri-mic-fill" title="serach by voice"></i></a>
+              <span class="ver1">|</span>
+            </div>
+          </form>
+        </div>
+        <form action="" method="post">
+          <li class="arrow1"><button type="submit"><i class="ri-search-line "></i></button></li>
         </form>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right" style="margin-top: 0.5%;">
-          <li style="font-size: 15px;margin-left: -3%;"><a href="/" title="Home" style="margin-left: 3%;">HOME</a></li>
-          <li style="font-size: 15px;"><a href="/about" title="About Us" target="_blank">ABOUT US</a></li>
-          <li><div class="navbarr">
-            <div class="subnavv">
-              <h6 class="subnavbtnn">PROJECT</h6>
-              <div class="subnav-contentt">
-                <a href="/propertylist/?query=plots" target="_blank"><div class="cardd">
-                  <i class="propertyicon icon_plot"></i>
-                  <div class="containerr" style="margin-left: -2%;width: 105px;background-color: white;">
-                    <h4 style="margin-left: 10%;"><b>Plots</b></h4> 
-                  </div>
-                </div>
+        <a class="gets1" class=" popup-btn" data-popup="popup-reg" style="cursor:pointer;"> <button
+            type="button">Property Posting<sup>Free</sup></button></a>
+        <li class="user_menu1" id="user_menu">
+          <div class="dropdown">
+            <a href="" style="color: white;"><i class="ri-account-circle-fill" style="cursor: pointer;"></i></a>
+
+            <div class="dropdown-content">
+              <a href="#">
+                <h6> LOGIN/REGISTER</h6>
+              </a>
+              <a href="#">Quick access</a>
+              <a href="#">About Us</a>
+              <a href="#">Contact Us</a>
+              <a class="tele" href="tel:123-456-7890"> <i class="ri-phone-line"></i>
+                <h6>Toll-Free | 10AM-8PM IST <button>1800-768-2234</button></h6>
+              </a>
+              <button id="Reqcall" type="button"> <i class="ri-phone-line"></i>Request a callback</button>
+            </div>
+          </div>
+        </li>
+        <li class="index_menu"><button type="button"><i onclick="openNav()" class="ri-menu-2-line"
+              style="cursor: pointer;"></i></button></li>
+              <div id="mysidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="ri-close-fill"></i></a>
+                <a href="#"><i class="ri-account-circle-fill"></i>
+                  <h6 style="color: #1faac9; font-weight: 600;">LOGIN/REGISTER</h6>
                 </a>
-                <a href="/propertylist/?query=villa" target="_blank"><div class="cardd">
-                  <i class="propertyicon icon_villa"></i>
-                  <div class="containerr" style="margin-left: -2%;width: 105px;background-color: white;">
-                    <h4 style="margin-left: 10%;"><b>Villa</b></h4> 
-                  </div>
-                </div></a>
-               <a href="/propertylist/?query=apartment" target="_blank"><div class="cardd">
-                <i class="propertyicon icon_apartment"></i>
-                <div class="containerr" style="margin-left: -2%;width: 105px;background-color: white;">
-                  <h4 style="margin-left: 10%;"><b>Apart</b></h4>
-                </div>
-              </div></a>
+                <a href="#">Home Loan</a>
+                <a href="#">Interior</a>
+                <a href="#">Legal Property</a>
+                <a href="#">Technical Evaluation</a>
+                <a href="#">Refer$Earn</a>
+                <a href="#">Investor</a>
+                <a href="#">About Us</a>
+                <a class="tele1" href="tel:123-456-7890"><i class="ri-phone-line"></i>
+                  <h6>Toll-Free | 10AM-8PM IST <button>1800-768-2234</button></h6>
+                </a>
               </div>
-            </div> 
-          </li>
-          <li style="font-size: 15px;"><a href="/blog" target="_blank" >NEWS</a></li>
-          <li style="font-size: 15px;"><a href="/contact" title="Contact Us" target="_blank" >CONTACT US</a></li>
-          <li style="margin-top: 1%;"> 
-          </li>
-        </ul>
       </div>
-    </div>
-  </nav>
-  </header>
-  <!-- <div id="mybutton">
-    <a href="/contact" title="Callback" class="short-topup callus" >
-    <button class="feedback">Get Instant Response</button>
-  </a>
-    </div> -->
-  <!-- HEADER  -->
-  <!-- ========= BLOCK ============ -->
-  {%block body_block%} {%endblock%}
-  </div>
-  <!-- </footer> -->
-  <!-- FOOTER -->
-<!-- newfooter -->
-<!-- Footer Start -->
+    </header>
+  <!-- </div> -->
+   <!-- ========= BLOCK ============ -->
+   {%block body_block%} {%endblock%}
+  <!-- this is new footer -->
+  <!-- Footer Start -->
 <div class="footerv">
   <div class="container">
       <div class="row">
@@ -315,7 +277,9 @@
     });
   </script>
   <!--===== REQUIRED JS =====-->
-  <!-- <script src={% static "js/jquery-3.2.1.min.js" %}></script> -->
+  <script src="{% static 'js/jquery3-3-1.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'js/header.js'%}"></script>
   <script src="{% static 'js/bootstrap.min.js' %}"></script>
   <script src="{% static 'js/bootsnav.min.js' %}"></script>
   <!--To View on scroll-->
@@ -352,14 +316,8 @@
   <script src="{% static 'js/death.min.js' %}"></script>
   <!--Revolution Slider-->
   <script src="{% static 'js/validation.js' %}"></script>
-  <!-- <script src={% static "js/themepunch/jquery.themepunch.tools.min.js" %}></script> -->
   <script src="{% static 'js/themepunch/jquery.themepunch.revolution.min.js' %}"></script>
-  <!-- <script src={% static "js/themepunch/revolution.extension.layeranimation.min.js" %}></script>
-  <script src={% static "js/themepunch/revolution.extension.navigation.min.js" %}></script>
-  <script src={% static "js/themepunch/revolution.extension.parallax.min.js" %}></script>
-  <script src={% static "js/themepunch/revolution.extension.slideanims.min.js" %}></script>
-  <script src={% static "js/themepunch/revolution.extension.video.min.js" %}></script> -->
-  <!--Custom Js -->
+<!--Custom Js -->
   <script src="{% static 'js/functions.min.js' %}"></script>
   <!--Maps & Markers-->
   <script src="{% static 'js/form.min.js' %}"></script>
@@ -372,40 +330,5 @@
   <script>
   document.addEventListener("DOMContentLoaded",function(){let e;if("IntersectionObserver"in window){e=document.querySelectorAll(".lazy-load");let t=new IntersectionObserver(function(e,n){e.forEach(function(e){if(e.isIntersecting){let n=e.target;n.src=n.dataset.src,n.classList.remove("lazy-load"),t.unobserve(n)}})});e.forEach(function(e){t.observe(e)})}else{let n;function r(){n&&clearTimeout(n),n=setTimeout(function(){let t=window.pageYOffset;e.forEach(function(e){e.offsetTop<window.innerHeight+t&&(e.src=e.dataset.src,e.classList.remove("lazy-load"))}),0==e.length&&(document.removeEventListener("scroll",r),window.removeEventListener("resize",r),window.removeEventListener("orientationChange",r))},20)}e=document.querySelectorAll(".lazy-load"),document.addEventListener("scroll",r),window.addEventListener("resize",r),window.addEventListener("orientationChange",r)}});
   </script>
-  <script>
-   function myFunction(){document.getElementById("myDropdown").classList.toggle("show")}window.onclick=function(d){if(!d.target.matches(".dropbtn")){var a,b=document.getElementsByClassName("dropdown-content");for(a=0;a<b.length;a++){var c=b[a];c.classList.contains("show")&&c.classList.remove("show")}}}
-  </script>
-  <script>
-   var mybutton=document.getElementById("myBtnaa");function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?mybutton.style.display="block":mybutton.style.display="none"}function topFunction(){document.body.scrollTop=0,document.documentElement.scrollTop=0}window.onscroll=function(){scrollFunction()}
-    </script>
-    <script>
-     var resizeElements;$(document).ready(function(){var a=".search_barj",e=a+" .inputi[type='text']",f=a+" .buttonj[type='submit']",b=a+" .search_dropdownj",g=b+" > span",c=b+" ul";function d(){$(c).fadeOut(25),$(b).removeClass("active")}(resizeElements=function(){var c=$(a).outerWidth(),h=$(g).outerWidth();$(b).width(h);var d=$(b).outerWidth(),i=$(f).outerWidth();$(e).css({"margin-left":d,width:(c-d-i)/c*100+"%"})})(),$(b).click(function(a){return $(b).hasClass("active")?d():($(c).fadeIn(25),$(b).addClass("active")),a.stopPropagation(),!1}),$("html").click(d),$(c+" li").click(function(){$(this).siblings("li.selected").removeClass("selected"),$(this).addClass("selected"),$(this).parents(".formx.search_barj:first").find(".inputi[type=text]").focus();var a=$(this).text();$(g).text(a),resizeElements()}),$(window).resize(function(){resizeElements()})})
-    </script>
-    <!-- google tag -->
-    <script>
-      var x = 0;
-      var timer = setInterval(function(){
-        if(jQuery('.alert-success').is(":visible")){
-          if(x==0){
-            gtag('event', 'conversion', {'send_to': 'AW-11133035839/Kc4CCJi2jZUYEL_K0rwp'});
-            x=1;
-          }
-          clearInterval(timer)
-        }
-      })
-    </script>
-    <!-- google Analytics -->
-    <script>
-      var xtt = 0;
-      var timerst = setInterval(function(){
-        if(jQuery('.alert-success').is(":visible")){
-          if(xtt==0){
-            gtag('event', 'contacts_forms');
-            xtt=1;
-          }
-          clearInterval(timerst)
-        }
-      })
-    </script>
 </body>
 </html>
