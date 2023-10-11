@@ -94,7 +94,6 @@ svg {
   display: flex !important;
   border: .2px solid rgba(0, 0, 0, .055)
 }
-
 .dropdown-content a {
   color: #000;
   font-size: 14px;

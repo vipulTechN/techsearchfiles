@@ -1,0 +1,1573 @@
+/* background banner img ,body and html property--------------------------------------------- */
+a,
+a:hover {
+  text-decoration: none
+}
+
+.back-to-top,
+body {
+  font-family: "Open Sans";
+  background-color: #fff
+}
+
+a {
+  color: #3498db
+}
+
+a:hover {
+  color: #5faee3
+}
+
+.bg_img1 {
+  width: 100%;
+  height: 42%;
+  overflow: hidden
+}
+
+.bg-img {
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out
+}
+
+.bg-img:hover {
+  transform: scale(1.05)
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+::-webkit-scrollbar {
+  display: none
+}
+
+/* background banner img,body an html property--------------------------------------------- */
+
+/* main nav header  of only 1st page ----------------------------------------------------------------------------*/
+#header,
+.gets2,
+.index_menu1,
+.user_menu1 {
+  position: absolute
+}
+
+#header li,
+.navbar {
+  list-style: none
+}
+
+#header {
+  background: 0 0;
+  height: 65px;
+  top: 0;
+  z-index: 50
+}
+
+#header .logo img {
+  padding: 0;
+  margin-top: 12px;
+  max-height: 57px
+}
+
+img,
+svg {
+  vertical-align: middle
+}
+
+.gets2 {
+  right: 110px
+}
+
+.gets2 button {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 5px 15px
+}
+
+.index_menu1 {
+  right: 20px
+}
+
+.index_menu1 button,
+.user_menu1 button {
+  background-color: transparent;
+  color: #fff;
+  border: none
+}
+
+.user_menu1 {
+  margin-bottom: 16px;
+  right: 60px
+}
+
+.user_menu1 .dropdown-content {
+  display: none;
+  margin-left: -230px;
+  width: 300px;
+  background-color: #fff;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 14px -1px #000;
+  position: absolute;
+  z-index: 1
+}
+
+.tele,
+.tele1 {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  display: flex !important;
+  border: .2px solid rgba(0, 0, 0, .055)
+}
+
+.dropdown-content a {
+  color: #000;
+  font-size: 14px;
+  padding: 8px 20px;
+  text-decoration: none;
+  display: block
+}
+
+.dropdown-content a h6 {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  color: #1faac9
+}
+
+.tele {
+  top: 56.5%;
+  align-items: center !important
+}
+
+.tele1:hover,
+.tele:hover {
+  background-color: #ffffffb0
+}
+
+.tele h6 {
+  font-size: 12px;
+  margin-right: 30px
+}
+
+.tele button {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600
+}
+
+.tele i {
+  font-size: 20px !important;
+  margin-left: 20px
+}
+
+.tele1 {
+  bottom: 1px;
+  align-items: center !important
+}
+
+#Reqcall,
+.navbar {
+  position: absolute;
+  display: flex
+}
+
+.tele1 h6 {
+  font-size: 12px;
+  margin-left: 20px;
+  color: #1faac9
+}
+
+.tele1 button {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  background-color: #fff
+}
+
+#Reqcall,
+.navbar button {
+  background-color: transparent
+}
+
+.tele1 i {
+  font-size: 20px !important;
+  margin-left: 10px
+}
+
+#Reqcall {
+  bottom: 3%;
+  left: 11%;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 1px 40px;
+  border: 2px solid #1faac9;
+  border-radius: 5px;
+  color: #1faac9;
+  box-shadow: 0 0 3px 0 #1faac9
+}
+
+#Reqcall i {
+  font-size: 22px;
+  margin-top: 8px;
+  margin-right: 7px
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+.user_menu1 .dropdown:hover .dropdown-content {
+  display: block
+}
+
+.index_menu1,
+.user_menu1 i {
+  font-size: 25px;
+  font-weight: 400
+}
+
+.navbar {
+  right: 300px;
+  align-items: center
+}
+
+.navbar button {
+  margin-left: 15px;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600
+}
+
+.navbar button:hover {
+  color: #5faee3
+}
+
+/* main nav header  end------------------------------------------------------------------------- */
+/* common nav header on whole website start------------------------------------------------------------------------------ */
+.dropdown1,
+.dropdown2 {
+  margin-bottom: 8px;
+  color: #000
+}
+
+#down1,
+.bar1 {
+  display: flex
+}
+
+#header1 {
+  width: 100%;
+  height: 65px;
+  top: 0px;
+  z-index: 40;
+  transition: .3s;
+  background-color: #004fb1;
+  position: fixed
+}
+
+#down1,
+.arrow1,
+.bar1 .ver1,
+.gets1,
+.index_menu,
+.logoo,
+.voice1 {
+  position: absolute
+}
+
+.logoo {
+  left: 50px;
+  top: 15px
+}
+
+#header1 .logoo img {
+  padding: 0;
+  margin-top: -4%;
+  max-height: 50px
+}
+
+#down1 {
+  width: 55%;
+  height: 50px;
+  background-color: #fff;
+  right: 25%;
+  border-radius: 10px
+}
+
+.dropdown1,
+.dropdown2,
+.searchbar1 {
+  border: none;
+  background-color: transparent
+}
+
+.dropdown1 {
+  width: 60%;
+  font-size: 14px;
+  font-weight: 600
+}
+
+.dropdown1:hover {
+  cursor: pointer;
+  color: #1a95b4
+}
+
+.dropdown2 {
+  width: 40%;
+  font-weight: 600 !important
+}
+
+.dropdown2,
+option,
+select {
+  font-size: 14px;
+  font-weight: 500
+}
+
+.dropdown2:hover {
+  cursor: pointer;
+  color: #1faac9
+}
+
+.bar1 .ver1,
+.ver {
+  font-size: 25px;
+  color: rgba(0, 0, 0, .356)
+}
+
+.ver {
+  margin-left: -9px;
+  font-weight: 100
+}
+
+.bar1 .ver1 {
+  right: 7%;
+  margin-top: -3px
+}
+
+.bar1 {
+  width: 70%;
+  height: 47px;
+  margin-top: 8px;
+  border-radius: 3px
+}
+
+.bar1:focus-within {
+  outline: 0
+}
+
+.searchbar1 {
+  height: 40px;
+  border-radius: 10px;
+  font-weight: 400;
+  width: 450px;
+  font-size: 13px;
+  outline: 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  align-items: flex-start
+}
+
+#header1 li,
+.navbar1 li {
+  list-style: none
+}
+
+.arrow1 {
+  right: 26%;
+  margin-top: -16px
+}
+
+.arrow1 button {
+  color: #000;
+  background-color: transparent;
+  border: none;
+  border-radius: 20%;
+  font-weight: 100;
+  font-size: 20px
+}
+
+.btn2,
+.btn2:hover,
+.gets1 button {
+  background-color: #fff;
+  color: #000
+}
+
+.voice1 {
+  color: #000;
+  margin-top: 6px;
+  right: 10%;
+  opacity: 4;
+  font-size: 16px
+}
+
+.btn2 {
+  margin-top: 5px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 500
+}
+
+.gets1 {
+  right: 7%
+}
+
+.gets1 button {
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 5px 15px
+}
+
+.gets1 button sup,
+.gets2 button sup {
+  margin-left: 4px;
+  background-color: #1faac9;
+  padding: 1px;
+  border-radius: 2px;
+  color: #fff
+}
+
+.index_menu {
+  right: 20px
+}
+
+.index_menu button {
+  background-color: transparent;
+  color: #fff;
+  border: none
+}
+
+.index_menu i {
+  font-size: 22px;
+  font-weight: 400
+}
+
+/* common nav header of whole website end --------------------------------------------------------------------------------*/
+/* scnd navbar hanger on 1st page start ------------------------------------------------------------  */
+.bottom__active,
+.bottom__active1,
+.bottom__active2,
+.bottom__active3,
+.bottom__active4,
+.bottom__active5 {
+  transition: 240ms linear
+}
+
+#nav2 #down,
+#nav2 #up {
+  width: 100%;
+  height: 50%;
+  display: flex
+}
+
+#nav2 h5 a,
+.dropdown {
+  color: #000;
+}
+
+.dropdown,
+.searchbar {
+  background-color: transparent
+}
+
+#nav2,
+#up .bottom__line,
+.btn1,
+.voice {
+  position: absolute
+}
+
+#nav2 {
+  width: 60%;
+  height: 130px;
+  border-radius: 45px;
+  background-color: #fff;
+  top: 379px;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.bar .arrow {
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+  left: 12px;
+  font-weight: 500
+}
+
+#nav2 #up {
+  justify-content: space-around;
+  background-color: #F2F3F8;
+  align-items: center;
+}
+
+#nav2 h5 {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#up img{
+  width: 100%;
+  height: 100%;
+}
+#nav2 h5 a:hover {
+  cursor: pointer;
+  color: #1a95b4
+}
+
+#up li {
+  list-style: none
+}
+
+#up .bottom__line {
+  top: 50%;
+  left: 23px;
+  width: 80px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  height: 3px;
+  background-color: #1a95b4
+}
+
+.menu--item__one,.menu--item__two,.menu--item__three,.menu--item__four,.menu--item__five,.menu--item__six{
+  margin-top: 10px;
+    background-color: white;
+    border-radius: 45px;
+    position: relative;
+}
+.menu--item__one a,.menu--item__two a,.menu--item__three a,.menu--item__four a,.menu--item__five a,.menu--item__six a{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  }
+.menu--item__one{
+    height: 40px;
+    width: 60px;
+}
+.menu--item__two{
+  height: 40px;
+  width: 60px;
+}
+.menu--item__three{
+  height: 40px;
+  width: 60px;
+}
+.menu--item__four{
+  height: 40px;
+  width: 110px;
+  white-space: nowrap;
+}
+.menu--item__five{
+  height: 40px;
+  width: 120px;
+}
+.menu--item__six{
+  height: 40px;
+  width: 130px;
+}
+.bottom__active {
+  transform: translate3d(90%, 0, 0)
+}
+
+.bottom__active1 {
+  transform: translate3d(155%, 0, 0);
+}
+
+.bottom__active2 {
+  transform: translate3d(315%, 0, 0);
+}
+
+.bottom__active3 {
+  transform: translate3d(319%, 0, 0);
+  width: 120px !important
+}
+
+.bottom__active4 {
+  transform: translate3d(830%, 0, 0);
+  left: -50% !important;
+  width: 125px !important
+}
+
+.bottom__active5 {
+  transform: translate3d(1095%, 0, 0);
+  left: -71.5% !important;
+  width: 130px !important
+}
+
+#credential {
+  width: 25%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, .12);
+  border-bottom-left-radius: 45px
+}
+
+.dropdown {
+  margin-left: 30px;
+  border: none;
+  width: 75%;
+  margin-top: 16px;
+  font-weight: 600
+}
+
+.form-select:focus {
+  box-shadow: none !important
+}
+
+.dropdown:hover {
+  cursor: pointer;
+  color: #1faac9;
+  border: none
+}
+
+.bar {
+  margin: 0 auto;
+  width: 75%;
+  border: 1px solid rgba(0, 0, 0, .12);
+  border-bottom-right-radius: 45px
+}
+
+.bar:focus-within {
+  outline: 0
+}
+
+.searchbar {
+  height: 40px;
+  border: none;
+  width: 400px;
+  font-weight: 500;
+  font-size: 15px;
+  outline: 0;
+  margin-left: 3%;
+  margin-top: 12px;
+  white-space: nowrap;
+  align-items: flex-start
+}
+
+.voice {
+  color: #0d6efd;
+  bottom: 17px;
+  font-size: 20px;
+  right: 150px
+}
+
+.btn1 {
+  right: 50px;
+  bottom: 13px
+}
+
+/* scnd navbar hanger on 1st page  end ------------------------------------------------------------  */
+/* common sidebar bar for mobile and desktop start =================================================*/
+.sidenav {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  border-top-left-radius: 20px;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: .3s
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #000;
+  display: flex;
+  transition: .3s
+}
+
+.sidenav a i {
+  margin-top: -6px;
+  margin-right: 8px;
+  font-size: 25px
+}
+
+.sidenav a:hover {
+  color: #1faac9;
+  background-color: rgba(0, 0, 0, .068)
+}
+
+.closebtn {
+  position: absolute;
+  top: 17px;
+  right: 25px
+}
+
+/* common sidebar bar for mobile and desktop end =================================================*/
+/* Sidenav  bar only for mobile=============================================== */
+.sidenav1 {
+  display: none;
+}
+
+/* Sidenav bar only for mobile=============================================== */
+/* middle part start =================================================================== */
+.middle {
+  padding-left: 150px;
+  padding-right: 150px;
+  display: block;
+  width: 100%;
+  z-index: 2;
+  padding-bottom: 80px;
+}
+
+.tools {
+  width: 100%;
+  height: 280px;
+  margin-top: 110px;
+  background-color: #F2F3F8;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tools1 .swiper-pagination-bullets {
+  display: none;
+}
+
+.ch1 {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.tools1 {
+  width: 100%;
+  height: 60%;
+  padding-left: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.ss3 {
+  width: 170px !important;
+  height: 165px !important;
+  border-radius: 34px !important;
+  background-color: white;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.07);
+  text-align: center !important;
+}
+
+.ss3 h5 {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+}
+
+.cover {
+  width: 70px;
+  height: 70px;
+  margin-left: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.ss3 img {
+  width: 100%;
+  height: 100%;
+}
+
+/*left section of middle part start ===================================== */
+.ss1 img,
+.swiper-slide img {
+  object-fit: cover
+}
+
+.ss1 img,
+.swiper-slide,
+.swiper-slide img,
+.swiper1 {
+  border-radius: 5px
+}
+
+.midleft {
+  width: 68%;
+  height: 100%
+}
+
+.swiper {
+  width: 100%;
+  height: 420px;
+  margin: 20px auto 50px
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 200px;
+  text-align: left
+}
+
+.ss1,
+.ss1 img,
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.cmmnheading {
+  margin-bottom: 20px
+}
+
+.cmmnheading h4 {
+  font-size: 23px;
+  font-weight: 800
+}
+
+.cmmnheading h5 {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, .508)
+}
+
+.swiper-slide h5 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000
+}
+
+.swiper-slide p {
+  font-size: 12px;
+  font-weight: 400
+}
+
+.swiper-slide h6 {
+  font-style: 14px;
+  margin-top: -8px;
+  font-weight: 600
+}
+
+.nextbut,
+.prevbut {
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: #F2F3F8;
+  border: .01px solid #000;
+  opacity: 7
+}
+
+.nextbut {
+  margin-right: -9px
+}
+
+.prevbut {
+  margin-left: -9px
+}
+
+.swiper-button-next::after,
+.swiper-button-next::before,
+.swiper-button-prev::after,
+.swiper-button-prev::before {
+  font-size: 21px;
+  font-weight: 900;
+  color: #232242;
+  opacity: 7
+}
+
+.upcoming {
+  width: 100%;
+  height: 500px;
+  overflow: hidden
+}
+
+.upcoming .swiper-pagination-bullets {
+  display: none;
+}
+
+.swiper1 {
+  width: 100%;
+  height: 100%;
+  position: relative
+}
+
+.s1 {
+  height: 90%;
+  margin-top: -20px;
+}
+
+.ss1 {
+  padding: 20px
+}
+
+.pricing {
+  width: 95.5%;
+  height: 70px;
+  opacity: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.p1 h4 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 800;
+}
+
+.p1 h6 {
+  margin-top: 3px;
+  font-size: 15px;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.swiper img:hover {
+  transform: scale(1.08);
+  transition: .3s ease-in-out;
+}
+.nextbut:hover {
+  transform: scale(1.12);
+  transition: .3s ease-in-out;
+}
+
+.prevbut:hover {
+  transform: scale(1.12);
+  transition: .3s ease-in-out;
+}
+
+#callback {
+  margin-top: 15px;
+  position: absolute;
+  padding: 2px 120px 2px 120px;
+  background-color: #F2F3F8;
+  margin-left: 13%;
+  border: none;
+  box-shadow: 0px 0px 3px 0px black;
+  opacity: 9;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#callback i {
+  margin-right: 10px;
+}
+
+#callback h6 {
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 2px;
+  margin-bottom: -1px;
+}
+
+.swiper2 {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  margin-top: 120px;
+  position: relative;
+}
+
+.ss2 {
+  width: 100%;
+  height: 80%;
+  padding: 5px;
+
+}
+
+.ss2 img {
+  width: 100%;
+  height: 100%;
+  margin-top: -10px;
+}
+
+.ss2 img:hover {
+  transform: scale(1.04);
+  transition: .3s ease-in-out;
+}
+
+.swiper2 .swiper-pagination-bullets {
+  display: none;
+}
+
+/*left section of middle part ends ===================================== */
+/* right section of middle part start ===================================== */
+.box1 img,
+.box2 img,
+.topb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.midright {
+  width: 25%;
+  height: 100%;
+  right: 150px;
+  position: fixed;
+  background-color: #F2F3F8;
+}
+
+.box1,
+.box2,
+.box3 {
+  width: 90%;
+  margin-left: 18px
+}
+
+.box1 {
+  height: 210px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  border: 1px solid gray
+}
+
+#box1button,
+.box2 {
+  border-radius: 5px
+}
+
+.box1 img,
+.box2 img {
+  border-radius: 3px
+}
+
+#box1button {
+  padding: 7px 90px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 8.5px;
+  margin-top: -20px;
+  border: 5px solid #fff;
+  top: 285px;
+  background-color: #004fb1
+}
+
+.box2 {
+  height: 190px;
+  border: 1px solid gray
+}
+
+.box3 {
+  margin-top: 40px;
+  height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden
+}
+
+.box3 h6 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px
+}
+
+#top-builder {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between
+}
+
+.topb {
+  width: 65px;
+  height: 97%
+}
+
+/* right section of middle part end ===================================== */
+/* middle part end================================================ */
+/* footer------------------------------------------------------------------ */
+#footer {
+  background: #fff;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, .1);
+  padding: 30px 0;
+  color: #222;
+  font-size: 14px;
+  width: 100%
+}
+
+#footer .credits {
+  font-size: 13px;
+  padding-top: 5px;
+  color: #222
+}
+
+#footer .footer-links a {
+  color: #222;
+  padding-left: 15px
+}
+
+#footer .footer-links a:first-child {
+  padding-left: 0
+}
+
+/* footer :end----------------------------------------------------------------- */
+/* commom nav header of only 1st page mobile query start ----------------------------------------------------------------------------*/
+@media only screen and (max-width:1480px) {
+
+  .index_menu1,
+  .user_menu1 {
+    font-weight: 400;
+    color: #fff
+  }
+
+  #header,
+  #header1 .logoo,
+  #user_menu,
+  .arrow1 {
+    position: absolute
+  }
+
+  #header {
+    height: 65px;
+    top: 0;
+    z-index: 50
+  }
+
+  #header .logo {
+    margin-top: -7px
+  }
+
+  #header .logo img,
+  #header1 .logoo img {
+    max-height: 45px
+  }
+
+  #header1 {
+    z-index: 40
+  }
+
+  #header1 .logoo {
+    left: 10px;
+    top: 20px
+  }
+
+  #down1,
+  .gets1,
+  .navbar {
+    display: none
+  }
+
+  .arrow1 {
+    bottom: 12.5px;
+    right: 78px
+  }
+
+  .arrow1 button {
+    color: #fff;
+    font-weight: 100;
+    font-size: 20px
+  }
+
+  .index_menu1,
+  .user_menu1 i {
+    font-size: 18px
+  }
+
+  .index_menu {
+    bottom: 14px;
+    right: 10px
+  }
+
+  .index_menu1 {
+    right: 5px;
+    top: 18px
+  }
+
+  .user_menu1 {
+    right: 30px;
+    margin-bottom: 12px
+  }
+
+  #user_menu {
+    right: 45px
+  }
+
+  .user_menu1 .dropdown-content {
+    display: none;
+    margin-top: 5px;
+    margin-left: -245px;
+    width: 300px;
+    background-color: #fff;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 14px -1px #000;
+    position: absolute
+  }
+
+  .gets2 {
+    background-color: transparent;
+    letter-spacing: .1px;
+    margin-top: -4px;
+    right: 65px;
+    color: #fff;
+    border: none
+  }
+
+  .gets2 button {
+    font-size: 9px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 3px
+  }
+}
+/* commom nav header of only 1st page mobile query ends ----------------------------------------------------------------------------*/
+/* middle section mobile query start================================================================................... */
+@media only screen and (max-width:1080px) {
+
+  .cmmnheading,
+  .swiper {
+    margin-bottom: 10px
+  }
+
+  .midright {
+    display: none !important
+  }
+
+  .middle {
+    padding: 15px;
+    margin-top: 15px;
+    z-index: 2
+  }
+
+  .midleft {
+    width: 100%
+  }
+
+  .cmmnheading h4 {
+    font-size: 16px
+  }
+
+  .cmmnheading h5 {
+    font-size: 11px
+  }
+
+  .swiper {
+    height: 370px
+  }
+
+  .nextbut,
+  .prevbut {
+    width: 30px;
+    height: 30px
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-next::before,
+  .swiper-button-prev::after,
+  .swiper-button-prev::before {
+    font-size: 15px;
+    color: #232242;
+    font-weight: 700;
+    opacity: 10
+  }
+
+  .swiper-slide h5 {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000
+  }
+
+  .swiper-slide p {
+    font-size: 11px;
+    margin-top: -3px
+  }
+
+  .swiper-slide h6 {
+    margin-top: -9px;
+    font-size: 13px
+  }
+  .tools {
+    margin-top: 20px;
+  }
+  .swiper2{
+    height: 400px;
+  }
+.s2{
+  margin-top: 20px;
+}
+}
+
+/* middle section mobile query ends================================================================................... */
+/* common sidenav for mobile view=============== */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  .sidenav {
+    z-index: 999;
+  }
+}
+
+/* common sidenav for mobile view=============== */
+/* scnd navbar hanger on 1st page mobile view start-----------------------------------------------------------  */
+@media only screen and (min-width:765px) and (max-width:1080px) {
+  #nav2 {
+    top: 380px !important
+  }
+}
+
+@media only screen and (max-width:1080px) {
+
+  .bar,
+  .btn1 {
+    bottom: 6px
+  }
+
+  .bar,
+  .searchbar {
+    position: absolute;
+    border: none
+  }
+
+  #nav2 {
+    width: 80%;
+    height: 40px;
+    position: absolute;
+    top: 235px;
+    left: 50%
+  }
+
+  #down #credential,
+  #nav2 #up,
+  .bottom__line {
+    display: none
+  }
+
+  #down {
+    position: absolute;
+    height: 100% !important
+  }
+
+  #credential button {
+    font-size: 10px;
+    margin-left: 5px
+  }
+
+  .bar {
+    width: 100%
+  }
+
+  .bar .arrow {
+    font-size: 13px;
+    position: relative;
+    top: -.2px;
+    left: 18px
+  }
+
+  .voice {
+    position: absolute;
+    right: 60px;
+    top: 2px;
+    font-size: 13px
+  }
+
+  .btn1 {
+    position: absolute;
+    padding: 1px;
+    font-size: 8px;
+    right: 15px
+  }
+
+  .searchbar {
+    top: -9.5px;
+    left: 30px;
+    height: 18px;
+    width: 215px;
+    font-weight: 500;
+    font-size: 10px;
+    outline: 0;
+    white-space: nowrap;
+    align-items: flex-start
+  }
+}
+
+/* scnd navbar hanger on 1st page mobile view start-----------------------------------------------------------  */
+/* <!-- sidenav bar for mobile view start ==================================================================== --> */
+@media only screen and (max-width:1080px) {
+  .sidenav1 {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 700;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: .2s;
+    display: block
+  }
+
+  #nav3 li,
+  #nav3 li i,
+  .mobilesidenav {
+    position: absolute
+  }
+
+  .mobilesidenav,
+  .sidenav1 a:hover {
+    background-color: rgba(0, 0, 0, .068)
+  }
+
+  .sidenav1 a i {
+    font-size: 25px
+  }
+
+  .sidenav1 a:hover {
+    color: #1faac9
+  }
+
+  #nav3 {
+    width: 100%;
+    height: 90px;
+    background-color: #004fb1
+  }
+
+  .mobilesidenav {
+    width: 70%;
+    height: 38px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    top: 3%;
+    left: 3%;
+    justify-content: space-around
+  }
+
+  .mobilesidenav a {
+    padding: 0;
+    font-size: 13px !important;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 50px
+  }
+
+  .mobilesidenav a:hover {
+    padding: 5px;
+    background-color: #fff;
+    color: #000;
+    transition: .5s
+  }
+
+  #nav3 li {
+    width: 93%;
+    height: 40px;
+    border-radius: 10px;
+    top: 70px;
+    list-style: none;
+    left: 3.5%;
+    box-shadow: 0 2px 14px -1px #000;
+    background-color: #fff
+  }
+
+  #nav3 li input {
+    width: 80%;
+    height: 98%;
+    margin-left: 45px;
+    margin-top: 1px;
+    font-size: 12px;
+    border: none
+  }
+
+  #nav3 li input:hover {
+    outline: 0
+  }
+
+  #nav3 li i {
+    top: 12px;
+    left: 22px;
+    font-size: 12px
+  }
+
+  #nav3 li input::placeholder {
+    font-size: 12px
+  }
+
+  .closebtn {
+    color: #fff
+  }
+}
+
+/* <!-- sidenav bar for mobile view end ==================================================================== --> */
+/* upcomin project or swiper pagination 4 :start=======================================/ */
+@media only screen and (max-width:768px) {
+  .upcoming {
+    margin-top: 35px;
+    height: 300px;
+    background-color: rgb(246, 246, 246);
+  }
+  .pricing{
+    margin-top: -8px;
+  }
+    .p1 h4 {
+      font-size: 15px;
+      letter-spacing: 0px;
+      font-weight: 700;
+    }
+    
+    .p1 h6 {
+      font-size: 10px;
+      letter-spacing: 0px;
+      font-weight: 700;
+    }
+    
+    .s1 {
+      top: 0px;
+    }
+  .ss1 {
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+
+  }
+
+  #callback {
+    padding: 6px 70px 6px 70px;
+    margin-left: 10px;
+ font-size: 12px;
+  }
+
+  #callback i {
+    margin-right: 10px;
+
+  }
+
+  #callback h6 {
+    font-size: 13px;
+    letter-spacing: 0px;
+    margin-left: 8px;
+  }
+}
+
+/* upcomin project or swiper pagination 4 :start=======================================/ */
