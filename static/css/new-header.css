@@ -14,7 +14,7 @@ html,body
 .user_menu1 {
   position: absolute
 }
-*::-webkit-scrollbar{
+*::-webkit-scrollbar {
   display: none
 }
 #header li,
@@ -94,6 +94,7 @@ svg {
   display: flex !important;
   border: .2px solid rgba(0, 0, 0, .055)
 }
+
 .dropdown-content a {
   color: #000;
   font-size: 14px;
@@ -160,7 +161,7 @@ svg {
   background-color: #fff
 }
 
-#Reqcall,
+#Reqcall, 
 .navbar button {
   background-color: transparent
 }
@@ -219,7 +220,11 @@ svg {
 .navbar button:hover {
   color: #5faee3
 }
-
+.userdrop {
+  margin-right: 27px;
+  width: 0px;
+  margin-top:-1px;
+}
 
 .dropdown1,
 .dropdown2 {
@@ -235,18 +240,23 @@ svg {
 #main{
   width: 100vw;
   height: 300vh;
-  background-color: red;
+  /* background-color: red; */
 }
 #header1 {
   width: 100%;
   height: 65px;
-  top: -65px;
+  top: 0px;
   z-index: 40;
   transition: .3s;
   background-color: #004fb1;
   position: fixed
 }
-
+.dropdown1:focus{
+  box-shadow: none;
+}
+.dropdown2:focus{
+  box-shadow: none;
+}
 #down1,
 .arrow1,
 .bar1 .ver1,
@@ -349,7 +359,8 @@ select {
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
-  align-items: flex-start
+  align-items: flex-start;
+  margin-left: 10px;
 }
 
 #header1 li,
@@ -357,20 +368,15 @@ select {
   list-style: none
 }
 
-.arrow1 {
-  right: 26%;
-  margin-top: -16px
+  .arrow1 {
+    right: 26.3%;
+    margin-top: -17px;
 }
 
 .arrow1 button {
-  color: #000;
   background-color: transparent;
   border: none;
-  border-radius: 20%;
-  font-weight: 100;
-  font-size: 20px
 }
-
 .btn2,
 .btn2:hover,
 .gets1 button {
@@ -443,7 +449,9 @@ select {
   padding-top: 20px;
   transition: .3s
 }
-
+.sidenav h6 {
+  color: rgb(113,180,235);
+}
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -455,9 +463,8 @@ select {
 }
 
 .sidenav a i {
-  margin-top: -6px;
+  margin-top: -2px;
   margin-right: 8px;
-  font-size: 25px
 }
 
 .sidenav a:hover {
@@ -467,33 +474,27 @@ select {
 
 .closebtn {
   position: absolute;
-  top: 17px;
+  top: 20px;
   right: 25px
 }
 
-
 /* commom nav header of only 1st page mobile query start ----------------------------------------------------------------------------*/
+.hideS{
+  display: none;
+}
 @media only screen and (max-width:1480px) {
-
-  .index_menu1,
-  .user_menu1 {
-    font-weight: 400;
-    color: #fff
-  }
-
   #header,
   #header1 .logoo,
   #user_menu,
   .arrow1 {
     position: absolute
   }
-
   #header {
     height: 65px;
     top: 0;
     z-index: 50
   }
-
+ 
   #header .logo {
     margin-top: -7px
   }
@@ -519,37 +520,42 @@ select {
   }
 
   .arrow1 {
-    bottom: 12.5px;
-    right: 78px
+    bottom: 11px;
+    right: 83px;
   }
+  .hideS{
+    display: contents;
+    font-size: 11px;
+    font-weight: 600;
 
+    }
   .arrow1 button {
-    color: #fff;
-    font-weight: 100;
-    font-size: 20px
+    padding: 1px 12px 1px 12px;
+    background-color: white;
+    border-radius: 20px;
   }
-
-  .index_menu1,
-  .user_menu1 i {
-    font-size: 18px
+  .ShiIcons.icon_search1 {
+    margin-bottom: 4px;
+    margin-left: 10px;
   }
-
   .index_menu {
     bottom: 14px;
-    right: 10px
+    right: 5px
   }
 
   .index_menu1 {
-    right: 5px;
+    right: 5px!important;
     top: 18px
   }
 
   .user_menu1 {
-    margin-bottom: -5px
+    right: 43px;
   }
 
   #user_menu {
-    right: 45px
+    width: 0px;
+    right: 100px;
+    top: 15%!important;
   }
 
   .user_menu1 .dropdown-content {
@@ -567,8 +573,8 @@ select {
   .gets2 {
     background-color: transparent;
     letter-spacing: .1px;
-    margin-top: -4px;
-    right: 65px;
+    margin-top: -3px;
+    right: 77px;
     color: #fff;
     border: none
   }

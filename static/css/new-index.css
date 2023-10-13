@@ -102,7 +102,7 @@ svg {
 
 .user_menu1 {
   margin-bottom: 16px;
-  right: 60px
+  right: 63px;
 }
 
 .user_menu1 .dropdown-content {
@@ -114,7 +114,8 @@ svg {
   border-radius: 8px;
   box-shadow: 0 2px 14px -1px #000;
   position: absolute;
-  z-index: 1
+  z-index: 1;
+
 }
 
 .tele,
@@ -138,7 +139,7 @@ svg {
   font-weight: 600;
   text-align: center;
   margin-top: 10px;
-  color: #1faac9
+  color: rgb(72,157,229);
 }
 
 .tele {
@@ -181,7 +182,6 @@ svg {
 .tele1 h6 {
   font-size: 12px;
   margin-left: 20px;
-  color: #1faac9
 }
 
 .tele1 button {
@@ -211,8 +211,8 @@ svg {
   padding: 1px 40px;
   border: 2px solid #1faac9;
   border-radius: 5px;
-  color: #1faac9;
-  box-shadow: 0 0 3px 0 #1faac9
+  color:rgb(72,157,229);
+  box-shadow: 0 0 3px 0 rgb(72,157,229);
 }
 
 #Reqcall i {
@@ -229,11 +229,6 @@ svg {
   display: block
 }
 
-.index_menu1,
-.user_menu1 i {
-  font-size: 25px;
-  font-weight: 400
-}
 
 .navbar {
   right: 300px;
@@ -252,9 +247,14 @@ svg {
   color: #5faee3
 }
 
+.gets2 button sup {
+  margin-left: 4px;
+  background-color: #1faac9;
+  padding: 1px;
+  border-radius: 2px;
+  color: #fff
+}
 /* main nav header  end------------------------------------------------------------------------- */
-/* common nav header on whole website start------------------------------------------------------------------------------ */
-/* common nav header of whole website end --------------------------------------------------------------------------------*/
 /* scnd navbar hanger on 1st page start ------------------------------------------------------------  */
 .bottom__active,
 .bottom__active1,
@@ -284,8 +284,8 @@ svg {
 
 #nav2,
 #up .bottom__line,
-.btn1,
-.voice {
+.btn1
+{
   position: absolute
 }
 
@@ -299,14 +299,6 @@ svg {
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.07);
-}
-
-.bar .arrow {
-  font-size: 20px;
-  position: relative;
-  top: 5px;
-  left: 12px;
-  font-weight: 500
 }
 
 #nav2 #up {
@@ -416,13 +408,16 @@ svg {
   border: 1px solid rgba(0, 0, 0, .12);
   border-bottom-left-radius: 45px
 }
-
+.userdrop {
+  margin-right: 27px;
+  width: 0px!important;
+  margin-top:-1px;
+}
 .dropdown {
   margin-left: 30px;
   border: none;
   width: 75%;
   margin-top: 16px;
-  font-weight: 600
 }
 
 .form-select:focus {
@@ -459,13 +454,6 @@ svg {
   align-items: flex-start
 }
 
-.voice {
-  color: #0d6efd;
-  bottom: 17px;
-  font-size: 20px;
-  right: 150px
-}
-
 .btn1 {
   right: 50px;
   bottom: 13px
@@ -498,16 +486,17 @@ svg {
 }
 
 .sidenav a i {
-  margin-top: -6px;
+  margin-top: -2px;
   margin-right: 8px;
-  font-size: 25px
 }
 
 .sidenav a:hover {
   color: #1faac9;
   background-color: rgba(0, 0, 0, .068)
 }
-
+.sidenav h6{
+  color: rgb(113,180,235)!important;
+}
 .closebtn {
   position: absolute;
   top: 17px;
@@ -742,11 +731,16 @@ svg {
   transform: scale(1.08);
   transition: .3s ease-in-out;
 }
+
+.upcoming img:hover{
+  transform:scale(1.03);
+  transition:.3s ease-in-out;
+}
+
 .nextbut:hover {
   transform: scale(1.12);
   transition: .3s ease-in-out;
 }
-
 .prevbut:hover {
   transform: scale(1.12);
   transition: .3s ease-in-out;
@@ -896,54 +890,21 @@ svg {
 
 /* right section of middle part end ===================================== */
 /* middle part end================================================ */
-/* footer------------------------------------------------------------------ */
-#footer {
-  background: #fff;
-  box-shadow: 0 0 12px 0 rgba(0, 0, 0, .1);
-  padding: 30px 0;
-  color: #222;
-  font-size: 14px;
-  width: 100%
-}
 
-#footer .credits {
-  font-size: 13px;
-  padding-top: 5px;
-  color: #222
-}
-
-#footer .footer-links a {
-  color: #222;
-  padding-left: 15px
-}
-
-#footer .footer-links a:first-child {
-  padding-left: 0
-}
-
-/* footer :end----------------------------------------------------------------- */
 /* commom nav header of only 1st page mobile query start ----------------------------------------------------------------------------*/
 @media only screen and (max-width:1480px) {
-
-  .index_menu1,
-  .user_menu1 {
-    font-weight: 400;
-    color: #fff
-  }
-
   #header,
   #header1 .logoo,
   #user_menu,
   .arrow1 {
     position: absolute
   }
-
   #header {
     height: 65px;
     top: 0;
     z-index: 50
   }
-
+ 
   #header .logo {
     margin-top: -7px
   }
@@ -967,42 +928,29 @@ svg {
   .navbar {
     display: none
   }
-
-  .arrow1 {
-    bottom: 12.5px;
-    right: 78px
+  .ShiIcons.icon_search1 {
+    margin-bottom: 4px;
+    margin-left: 10px;
   }
-
-  .arrow1 button {
-    color: #fff;
-    font-weight: 100;
-    font-size: 20px
-  }
-
-  .index_menu1,
-  .user_menu1 i {
-    font-size: 18px
-  }
-
   .index_menu {
     bottom: 14px;
-    right: 10px
+    right: 5px
   }
 
   .index_menu1 {
-    right: 5px;
+    right: 5px!important;
     top: 18px
   }
 
   .user_menu1 {
-    right: 30px;
-    margin-bottom: 12px
+    right: 43px;
   }
 
   #user_menu {
-    right: 45px
+    width: 0px;
+    right: 100px;
+    top: 15%!important;
   }
-
   .user_menu1 .dropdown-content {
     display: none;
     margin-top: 5px;
@@ -1018,8 +966,8 @@ svg {
   .gets2 {
     background-color: transparent;
     letter-spacing: .1px;
-    margin-top: -4px;
-    right: 65px;
+    margin-top: -3px;
+    right: 77px;
     color: #fff;
     border: none
   }
@@ -1116,9 +1064,9 @@ svg {
     padding-top: 15px;
   }
 
-  .sidenav a {
+  /* .sidenav a {
     font-size: 18px;
-  }
+  } */
 
   .sidenav {
     z-index: 999;
@@ -1174,19 +1122,11 @@ svg {
     width: 100%
   }
 
-  .bar .arrow {
-    font-size: 13px;
-    position: relative;
-    top: -.2px;
-    left: 18px
-  }
-
-  .voice {
-    position: absolute;
-    right: 60px;
-    top: 2px;
-    font-size: 13px
-  }
+  .ShiIcons.icon_voiceicon {
+    position:absolute;
+ right: 55px!important;
+bottom: 0.5px!important;
+}
 
   .btn1 {
     position: absolute;
@@ -1196,15 +1136,11 @@ svg {
   }
 
   .searchbar {
-    top: -9.5px;
-    left: 30px;
+    top: -8px;
+    left: 42px;
     height: 18px;
-    width: 215px;
-    font-weight: 500;
+    width: 115px;
     font-size: 10px;
-    outline: 0;
-    white-space: nowrap;
-    align-items: flex-start
   }
 }
 
@@ -1300,18 +1236,14 @@ svg {
   }
 
   #nav3 li i {
-    top: 12px;
-    left: 22px;
-    font-size: 12px
+    top: 8px;
+    left: 5px;
   }
 
   #nav3 li input::placeholder {
     font-size: 12px
   }
 
-  .closebtn {
-    color: #fff
-  }
 }
 
 /* <!-- sidenav bar for mobile view end ==================================================================== --> */
@@ -1322,24 +1254,26 @@ svg {
     height: 300px;
     background-color: rgb(246, 246, 246);
   }
-  .pricing{
-    margin-top: -8px;
+
+.pricing{
+  margin-top: -8px;
+}
+  .p1 h4 {
+    font-size: 15px;
+    letter-spacing: 0px;
+    font-weight: 700;
   }
-    .p1 h4 {
-      font-size: 15px;
-      letter-spacing: 0px;
-      font-weight: 700;
-    }
-    
-    .p1 h6 {
-      font-size: 10px;
-      letter-spacing: 0px;
-      font-weight: 700;
-    }
-    
-    .s1 {
-      top: 0px;
-    }
+  
+  .p1 h6 {
+    font-size: 10px;
+    letter-spacing: 0px;
+    font-weight: 700;
+  }
+  
+  .s1 {
+    top: 0px;
+  }
+
   .ss1 {
     padding-top: 20px;
     padding-left: 0px;
@@ -1351,7 +1285,7 @@ svg {
   #callback {
     padding: 6px 70px 6px 70px;
     margin-left: 10px;
- font-size: 12px;
+    font-size: 12px;
   }
 
   #callback i {
@@ -1365,5 +1299,4 @@ svg {
     margin-left: 8px;
   }
 }
-
 /* upcomin project or swiper pagination 4 :start=======================================/ */

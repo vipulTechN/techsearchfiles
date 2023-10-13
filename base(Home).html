@@ -1,7 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -11,87 +11,142 @@
   <link rel="stylesheet" type="text/css" href="{% static 'css/master.min.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'css/icons.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/remixicon.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/new-header.css' %}">
   {% block head_block %}{% endblock %}
   <style>
     /* this  is footer css============== */ .item h4{font-size:19px;line-height:1.375em;font-weight:400;font-style:italic;margin:70px 0}@media only screen and (min-width:1200px){.feedback{width:100%;border-radius:34px;margin-left:50%}}@media screen and (max-width:600px){.feedback{width:180%;border-radius:34px;margin-left:-50%}}.item span{font-style:normal}.navbar{margin-bottom:0;background-image:linear-gradient(#1faac9,#053a59);z-index:9999;border:0;font-size:12px!important;line-height:1.42857143!important;letter-spacing:4px;border-radius:0;font-family:Montserrat,sans-serif}.navbar .navbar-brand,.navbar li a{color:#fff!important}.navbar-nav li a:hover,.navbar-nav li.active a{color:#172661!important;background-color:#fff!important}.navbar-default .navbar-toggle{border-color:transparent;color:#fff!important;margin-top:4%}.dropbtn{background-color:transparent;color:#fff;padding:16px;font-size:16px;border:none;cursor:pointer}.dropbtn:focus,.dropbtn:hover{background-color:transparent}.dropdown{position:relative;display:inline-block}.dropdown-content{display:none;position:absolute;background-color:#172661;min-width:160px;overflow:auto;box-shadow:0 8px 16px 0 rgba(0,0,0,.2);z-index:1}.dropdown-content a{color:#000;padding:12px 16px;text-decoration:none;display:block}.dropdown a:hover{background-color:#ddd}body{margin:0;height:2000px}.navbarr{overflow:hidden;background-color:transparent}.navbarr a{float:left;font-size:16px;color:#fff;text-align:center;padding:14px 16px;text-decoration:none}.subnavv{float:left;overflow:hidden}.subnavv .subnavbtnn{font-size:16px;border:none;outline:0;color:#fff;padding:14px 16px;background-color:inherit;font-family:inherit;margin:0;font-weight:bolder}.navbarr a:hover,.subnavv:hover .subnavbtnn{background-color:#fff;color:#172661}.subnav-contentt{display:none;position:absolute;left:0;background-image: linear-gradient(#1faac9,#053a59);;width:100%;z-index:1}.subnav-contentt a{float:left;color:#fff;text-decoration:none}.subnav-contentt a:hover{background-color:#eee;color:#000}.subnavv:hover .subnav-contentt{display:block}.cardd{box-shadow:0 4px 8px 0 rgba(0,0,0,.2);transition:.3s;width:100px}.cardd:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,.2)}.containerr{padding:2px 16px;background-color:#fff}.navbar-default .navbar-nav>li>a{font-weight:bolder}.aq{transition:.3s}.aq:active,.aq:focus,.aq:hover{outline:0;text-decoration:none}.footerv{position:relative;padding-top:45px;background:#121518}.footerv .footer-about,.footerv .footer-contact,.footerv .footer-links,.footerv .footer-project{position:relative;margin-bottom:45px;color:#999}.footerv .footer-about h3,.footerv .footer-contact h3,.footerv .footer-links h3,.footerv .footer-project h3{position:relative;margin-bottom:20px;padding-bottom:10px;font-size:20px;font-weight:600;color:#eee}.footerv .footer-about h3::after,.footerv .footer-contact h3::after,.footerv .footer-links h3::after,.footerv .footer-project h3::after{position:absolute;content:"";width:50px;height:2px;left:0;bottom:0;background:#eee}.footerv .footer-social{position:relative;margin-top:20px}.footerv .footer-social .aq{text-align:center;color:#999;font-size:14px;border:1px solid #999;display:inline-block;width:35px;height:35px;padding:6px 0;border-radius:35px}.footerv .footer-social .aq:hover{color:#fff;background:#0085ff;border-color:#0085ff}.footerv .footer-contact p{margin-bottom:10px;font-size:16px;color:#999}.footerv .footer-contact i{margin-right:10px;font-size:16px;color:#999}.footerv .footer-contact .aq:last-child i{margin:0}.footerv .footer-contact .aq:hover i{color:#0085ff}.footerv .footer-links .aq{margin-bottom:6px;padding-left:15px;color:#999;display:block}.footerv .footer-links .aq:last-child{margin:0}.footerv .footer-links .aq:hover{color:#0085ff}.footerv .footer-links .aq::before{position:absolute;font-family:"Font Awesome 5 Free";font-weight:900;left:0}.footerv .footer-project{float:left;font-size:0}.footerv .footer-project .aq{padding:0 8px 8px 0;display:block;width:33.33%;float:left}.footerv .footer-project .aq img{width:100%}.footerv .footer-newsletter{text-align:center;color:#999;margin-bottom:35px;max-width:700px}.footerv .footer-newsletter input{background:rgba(256,256,256,.15);margin-bottom:15px;height:35px;border:none;border-radius:5px}.footerv .footer-newsletter .btn{font-weight:400;text-transform:uppercase;color:#fff;background:#e9414a;border-radius:5px;display:block;width:100%;height:35px;font-size:14px;border:none;transition:.3s}.footerv .footer-newsletter .btn:hover{color:#0085ff;background:#fff}.footerv .footer-newsletter .btn:focus{box-shadow:none}.footerv .copyright{position:relative;padding:25px 0;background:#000}.footerv .copyright .copy-text p{margin:0;font-size:16px;font-weight:400;color:#999}.footerv .copyright .copy-text p .aq{color:#0085ff;text-decoration:none}.footerv .copyright .copy-text p .aq:hover{color:#ff008c}.footerv .copyright .copy-menu{position:relative;font-size:0;text-align:right}.footerv .copyright .copy-menu .aq{margin-right:15px;padding-right:15px;border-right:1px solid rgba(255,255,255,.3);color:#999;font-size:16px;font-weight:400}.footerv .copyright .copy-menu .aq:hover{color:#0085ff}.footerv .copyright .copy-menu .aq:last-child{margin-right:0;padding-right:0;border-right:none}@media (max-width:767.98px){.footerv .copyright .copy-menu,.footerv .copyright .copy-text{text-align:center}.footerv .copyright .copy-text p{margin-bottom:5px}}.dropdownjk{position:relative;display:inline-block}.dropdown-contentjk{display:none;position:absolute;background-color:#f9f9f9;min-width:160px;box-shadow:0 8px 16px 0 gray;padding:12px 16px;z-index:1}.dropdownjk:hover .dropdown-contentjk{display:block}#myBtnaa{display:none;position:fixed;bottom:20px;right:30px;z-index:99;font-size:18px;border:none;outline:0;background-color:red;color:#000;cursor:pointer;padding:15px;border-radius:100px}#myBtnaa:hover{background-color:#87ceeb}.feedback{background-color:#31b0d5;color:#fff;padding:10px 20px;border-radius:4px;border-color:#46b8da;background-image:linear-gradient(to bottom left,#1faac9,#053a59)}#mybutton{position:fixed;bottom:4px;right:-80px;margin-right:54%;width:27%;z-index:1}.formx{margin:-1px auto 0;margin-left:29%;margin-top:4%}.search_barj{background:#fff;border:#b7b7b7 solid 1px;border-radius:3px;box-shadow:0 0 3px #ccc;position:relative;font-family:'Source Sans Pro',sans-serif;max-width:420px}.search_barj .inputi[type=text]{border:none;box-shadow:none;font-weight:600;font-size:14px;width:80%;padding:.5em;margin:0;overflow:hidden}.search_barj .inputi[type=text]:focus{outline:0}.search_barj .buttonj[type=submit]{background:linear-gradient(#237cd4,#1e6ab5);color:rgba(255,255,255,0);border:1px solid #1c62a8;width:10%;min-width:38px;position:absolute;top:-1px;right:-1px;bottom:-1px;border-radius:0 3px 3px 0;margin:0;user-select:none}.search_barj .buttonj[type=submit]:after{content:'';position:absolute;top:18%;right:0;bottom:22%;left:4%;background:url("#") no-repeat center center;background-size:contain}.search_barj .buttonj[type=submit]:focus,.search_barj .buttonj[type=submit]:hover{background:linear-gradient(#38d,#2174c7);box-shadow:0 0 3px rgba(0,0,0,.5);cursor:pointer}.search_barj .search_dropdownj{font-weight:600;min-width:17px;background:linear-gradient(#f4f4f4,#e2e2e2);border-right:1px solid #ddd;color:#555;padding:0 28px 0 13px;border-radius:2px 0 0 2px;position:absolute;top:0;left:0;bottom:0;z-index:10000;user-select:none;box-sizing:content-box}.search_barj .search_dropdownj:after{content:"\2193";color:rgba(85,85,85,0);background:url("#") no-repeat top left;height:8px;width:10px;position:absolute;top:50%;right:10px;margin-top:-6px}.search_barj .search_dropdownj.active,.search_barj .search_dropdownj:hover{background:linear-gradient(#e7e7e7,#d5d5d5);cursor:pointer;border-right-color:#ccc}.search_barj .search_dropdownj>span{position:absolute;top:50%;margin-top:-8px;white-space:nowrap;font-size:15px}.search_barj .search_dropdownj ul{display:none;position:absolute;top:105%;left:-1px;font-size:14px;width:225px;background:#fff;box-shadow:1px 1px 5px rgba(0,0,0,.2);border:1px solid #ccc;border-radius:3px;padding:7px 0}.search_barj .search_dropdownj li{list-style-type:none;margin:0;padding:5px 18px;color:#1c62a8;line-height:1.2em;position:relative}.search_barj .search_dropdownj li:hover{background:#e7e7e7}.search_barj.smallj{max-width:180px}.search_barj .search_dropdownj li.selectedj{background:#1c62a8;color:#fff}.search_barj.smallj .inputi[type=text]{font-size:13px}::placeholder{font-weight:400}@media (min-width:768px){.navbar-header{float:left;margin-right:-15px;width:30%}}@media only screen and (min-width:1030px) and (max-width:1605px){.search_barj.smallj{max-width:306px}.formx{margin-left:29%;margin-top:4%}}@media (max-width:786px){.icon-bar12{display:none}}
+    
+    .ShiIcons {
+    background: url(img/SHIicons2.png);
+    width: 24px;
+    height: 24px;
+    background-size: 450px 287px;
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    background-repeat: no-repeat;
+    }
+
+.ShiIcons.icon_toggle {
+    background-position: -346px -24px;
+}
+.index_menu1{
+  right: 16px;
+}
+.ShiIcons.icon_user {
+  background-position: -160px -120px;
+}
+.ShiIcons.icon_user1 {
+  background-position: 0px -95px;
+}
+.ShiIcons.icon_search {
+  background-position: -27px 0px;
+  margin-left: 15px;
+}
+.ShiIcons.icon_search1 {
+  background-position: -1px -71px;
+}
+.ShiIcons.icon_voiceicon {
+  background-position: -286px -98px;
+position: absolute;
+right: 160px;
+bottom: 17px;
+
+}
+.ShiIcons.icon_voiceicon1 {
+  background-position: -128px -120px;
+}
+.ShiIcons.icon_cross {
+  background-position: -400px -24px;
+  margin-right: -10px;
+  margin-top: -3px;
+}
+.ShiIcons.icon_phonecall{
+  background-position: -162px -240px;
+}
+.ShiIcons.icon_phonecall1{
+  background-position: -187px -240px;
+}
+
+.ShiIcons.icon_cross1 {
+  background-position: 0px -20px;
+}
+    #header1{
+      top: -65px;
+    }
     </style>
     </head>
     <body oncontextmenu="return false">
-  <!-- <div id="main"> -->
-    <header id="header1" class="fixed-top d-flex align-items-center">
-      <div class="navbar1  container d-flex align-items-center justify-content-between">
-        <div class="logo">
-          <a class="logoo" href="/"><img src="{% static 'images/SHI.png' %}" loading="lazy" alt="logo"></a>
-        </div>
-        <div id="down1">
-          <form action="" method="post">
-            <div class="bar1">
-              <select class=" dropdown1 form-select " aria-label="Default select example">
-                <option selected>All credential</option>
-                <option value="1">Bangalore</option>
-                <option value="2">Chennai</option>
-                <option value="3">Hyderabad</option>
-              </select>
-              <span class="ver">|</span>
-              <select class="dropdown2 form-select " aria-label="Default select example">
-                <option selected>Buy</option>
-                <option value="1">Rent</option>
-                <option value="2">Pg/Co-living</option>
-                <option value="3">Projects</option>
-              </select>
-              <span class="ver">|</span>
-              <input class="searchbar1" type="text" placeholder="Search 'Your dream home with us'" title="Search">
-              <a href="#"> <i class="voice1 ri-mic-fill" title="serach by voice"></i></a>
-              <span class="ver1">|</span>
-            </div>
-          </form>
-        </div>
-        <form action="" method="post">
-          <li class="arrow1"><button type="submit"><i class="ri-search-line "></i></button></li>
-        </form>
-        <a class="gets1" class=" popup-btn" data-popup="popup-reg" style="cursor:pointer;"> <button
-            type="button">Property Posting<sup>Free</sup></button></a>
-        <li class="user_menu1" id="user_menu">
-          <div class="dropdown_new">
-            <a href="" style="color: white;"><i class="ri-account-circle-fill" style="cursor: pointer;"></i></a>
-
-            <div class="dropdown-content">
-              <a href="#">
-                <h6> LOGIN/REGISTER</h6>
-              </a>
-              <a href="#">Quick access</a>
-              <a href="#">About Us</a>
-              <a href="#">Contact Us</a>
-              <a class="tele" href="tel:123-456-7890"> <i class="ri-phone-line"></i>
-                <h6>Toll-Free | 10AM-8PM IST <button>1800-768-2234</button></h6>
-              </a>
-              <button id="Reqcall" type="button"> <i class="ri-phone-line"></i>Request a callback</button>
-            </div>
+      <header id="header1" class="fixed-top d-flex align-items-center">
+        <div class="navbar1  container d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <a class="logoo" href="/"><img src="{% static 'images/SHI.png' %}" loading="lazy" alt="logo"></a>
           </div>
-        </li>
-        <li class="index_menu"><button type="button"><i onclick="openNav()" class="ri-menu-2-line"
-              style="cursor: pointer;"></i></button></li>
-              <div id="mysidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="ri-close-fill"></i></a>
-                <a href="#"><i class="ri-account-circle-fill"></i>
-                  <h6 style="color: #1faac9; font-weight: 600;">LOGIN/REGISTER</h6>
+          <div id="down1">
+            <form action="" method="post">
+              <div class="bar1">
+                <select class=" dropdown1 form-select " aria-label="Default select example">
+                  <option selected>All credential</option>
+                  <option value="1">Bangalore</option>
+                  <option value="2">Chennai</option>
+                  <option value="3">Hyderabad</option>
+                </select>
+                <span class="ver">|</span>
+                <select class="dropdown2 form-select " aria-label="Default select example">
+                  <option selected>Buy</option>
+                  <option value="1">Rent</option>
+                  <option value="2">Pg/Co-living</option>
+                  <option value="3">Projects</option>
+                </select>
+                <span class="ver">|</span>
+                <input class="searchbar1" type="text" placeholder="Search 'Your dream home with us'" title="Search">
+                <a href="#"> <i class="voice1 ShiIcons icon_voiceicon1 " title="serach by voice"></i></a>
+                <span class="ver1">|</span>
+              </div>
+            </form>
+          </div>
+          <form action="" method="post">
+            <li class="arrow1" ><button type="button"><span class="hideS">Search</span><i onclick="openNav1()" class="ShiIcons icon_search1"></i></button></li>
+          </form>
+          <a class="gets1" class=" popup-btn" data-popup="popup-reg" style="cursor:pointer;"> <button
+              type="button">Property Posting<sup>Free</sup></button></a>
+          <li class="user_menu1" id="user_menu">
+            <div class="dropdown  userdrop ">
+              <a href="" ><i class="ShiIcons icon_user" ></i></a>
+              <div class="dropdown-content">
+                <a href="#">
+                  <h6> LOGIN/REGISTER</h6>
                 </a>
-                <a href="#">Home Loan</a>
-                <a href="#">Interior</a>
-                <a href="#">Legal Property</a>
-                <a href="#">Technical Evaluation</a>
-                <a href="#">Refer$Earn</a>
-                <a href="#">Investor</a>
+                <a href="#">Quick access</a>
                 <a href="#">About Us</a>
-                <a class="tele1" href="tel:123-456-7890"><i class="ri-phone-line"></i>
+                <a href="#">Contact Us</a>
+                <a class="tele" href="tel:123-456-7890"> <i class="ShiIcons icon_phonecall"></i>
                   <h6>Toll-Free | 10AM-8PM IST <button>1800-768-2234</button></h6>
                 </a>
+                <button id="Reqcall" type="button"> <i class="ShiIcons icon_phonecall1"></i>Request a callback</button>
               </div>
-      </div>
-    </header>
-  <!-- </div> -->
+            </div>
+          </li>
+          <li class="index_menu"><button type="button"><i onclick="openNav()" class="ShiIcons icon_toggle"
+                style="cursor: pointer;"></i></button></li>
+                <div id="mysidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="ShiIcons icon_cross"></i></a>
+                  <a href="#"><i class="ShiIcons icon_user1"></i>
+                    <h6 style="font-weight: 600;">LOGIN/REGISTER</h6>
+                  </a>
+                  <a href="#">Home Loan</a>
+                  <a href="#">Interior</a>
+                  <a href="#">Legal Property</a>
+                  <a href="#">Technical Evaluation</a>
+                  <a href="#">Refer$Earn</a>
+                  <a href="#">Investor</a>
+                  <a href="#">About Us</a>
+                  <a class="tele1" href="tel:123-456-7890"><i class="ShiIcons icon_phonecall"></i>
+                    <h6>Toll-Free | 10AM-8PM IST <button>1800-768-2234</button></h6>
+                  </a>
+                </div>
+        </div>
+      </header>
    <!-- ========= BLOCK ============ -->
    {%block body_block%} {%endblock%}
   <!-- this is new footer -->
@@ -279,7 +334,7 @@
   <!--===== REQUIRED JS =====-->
   <script src="{% static 'js/jquery3-3-1.js' %}"></script>
   <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
-  <script src="{% static 'js/header.js'%}"></script>
+  <script src="{% static 'js/new-header.js'%}"></script>
   <script src="{% static 'js/bootstrap.min.js' %}"></script>
   <script src="{% static 'js/bootsnav.min.js' %}"></script>
   <!--To View on scroll-->
