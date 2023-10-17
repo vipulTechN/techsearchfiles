@@ -12,7 +12,7 @@ document.querySelector('html,body').scrollIntoView({
       } else {
         $(".midright").css("top", "-100%");
       }
-      if (scrollY >= 2700) {
+      if (scrollY >= 3250) {
         $(".midright").css("top", "-100%");
       }
     else{
@@ -116,7 +116,7 @@ document.querySelector('html,body').scrollIntoView({
   }
   // Initialize your sliders
   var swiper4 = initializeSwiper1(".mySwiper3", 1, 30);
-  
+
   var swiper = new Swiper(".mySwiper4", {
     slidesPerView:3,
     spaceBetween:30,
@@ -146,3 +146,37 @@ document.querySelector('html,body').scrollIntoView({
       prevEl: ".swiper-button-prev",
     },
   }); 
+
+  // grid start ==========================================
+  function initializeSwiper4(selector, slidesPerView, spaceBetween) {
+    return new Swiper(selector, {
+      slidesPerView: slidesPerView, // preview slider
+      spaceBetween: spaceBetween,
+      lazy: true,
+      // loop: true,
+    freemode:true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+      breakpoints:{
+        768:{
+          slidesPerView:3,
+        },
+        500:{
+          slidesPerView:2.3,
+        },
+        250:{
+          slidesPerView:1.2,
+        }
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
+  var swiper7 = initializeSwiper4(".mySwiper6", 3, 20);
+  
+// grid end==========================================

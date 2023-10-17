@@ -13,6 +13,8 @@
   <!-- Vendor CSS Files -->
   <link rel="stylesheet" href="{%static 'css/swiper-bundle1.css'%}"/>
   <link rel="stylesheet" href="{%static 'css/new-index.css'%}">
+  <link rel="stylesheet" href="{%static 'css/grid.css'%}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/shiicons.css' %}">
 {% endblock %}
 {%block body_block%}
   <style>
@@ -125,7 +127,12 @@ bottom: 17px;
 .ShiIcons.icon_cross1 {
   background-position: 0px -20px;
 }
-
+.grid-heading{
+  text-align: center;
+}
+.grid-heading h2{
+  font-size: 30px; font-weight: 800; margin-bottom: 30px;
+}
   </style>
 </head>
 <body>
@@ -318,6 +325,63 @@ bottom: 17px;
         </div>
       </div>
    <!-- tools and offers section start======================================================================= -->
+   
+<!-- grid section start========================================================================== -->
+<div class="grid-heading">
+  <h2>Top Cities </h2>
+</div>
+
+  <div class="grid-container">
+    <div class="grid-item item1">
+      <a href=""> <img src="{%static 'images/Bangalore.jpg'}" alt=""></a>
+    </div>
+    <div class="grid-item item2">
+        <a href=""><img src="{%static 'images/Chennai.jpg'}" alt=""></a>
+    </div>
+    <div class="grid-item item3 ">
+        <a href=""><img src="{%static 'images/Hyderabad.jpg'}"alt=""></a>
+    </div>
+    <div class="grid-item item4">
+        <a href=""><img src="{%static 'images/Mumbai.jpg'}" alt=""></a>
+    </div>
+    <div class="grid-item item5">
+        <a href=""><img src="{%static 'images/Delhi.jpg'}" alt=""></a>
+    </div>
+    <div class="grid-item item6">
+        <a href=""><img src="{%static 'images/Pune.jpg'}" alt=""></a>
+    </div>
+</div>
+<div class="swiper4 mySwiper6 "> 
+  <div class="cmmnheading">
+    <h4>Top cities</h4>
+    <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+  </div>
+  <div class="swiper-wrapper s4">
+    <div class=" swiper-slide ss4">
+      <a href=""> <img src="{%static 'images/Bangalore.jpg'}" alt=""></a>
+    </div> <!-- end section -->        
+    <div class=" swiper-slide ss4">
+      <a href=""><img src="{%static 'images/Chennai.jpg'}" alt=""></a>
+    </div> <!-- end section -->        
+    <div class=" swiper-slide ss4">
+      <a href=""><img src="{%static 'images/Hyderabad.jpg'}"alt=""></a>
+    </div> <!-- end section -->        
+    <div class=" swiper-slide ss4">
+      <a href=""><img src="{%static 'images/Mumbai.jpg'}" alt=""></a>
+    </div> <!-- end section -->        
+    <div class=" swiper-slide ss4">
+      <a href=""><img src="{%static 'images/Delhi.jpg'}" alt=""></a>
+    </div> <!-- end section -->        
+    <div class=" swiper-slide ss4">
+      <a href=""><img src="{%static 'images/Pune.jpg'}" alt=""></a>
+    </div> <!-- end section -->        
+    
+  </div>
+  <div class="nextbut swiper-button-next"></div>
+  <div class="prevbut swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+<!-- grid section end========================================================================== -->
 
       <!-- left part of middle start =============================================== -->
       <div class="midleft">
