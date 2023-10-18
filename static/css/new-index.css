@@ -56,13 +56,13 @@ html {
 .navbar {
   list-style: none
 }
-
+/* 
 #header {
   background: 0 0;
   height: 65px;
   top: 0;
   z-index: 50
-}
+} */
 
 #header .logo img {
   padding: 0;
@@ -490,10 +490,6 @@ svg {
   margin-right: 8px;
 }
 
-.sidenav a:hover {
-  color: #1faac9;
-  background-color: rgba(0, 0, 0, .068)
-}
 .sidenav h6{
   color: rgb(113,180,235)!important;
 }
@@ -522,7 +518,7 @@ svg {
 
 .tools {
   width: 100%;
-  height: 280px;
+  height: 270px;
   margin-top: 110px;
   background-color: #F2F3F8;
   margin-bottom: 50px;
@@ -530,7 +526,7 @@ svg {
   overflow: hidden;
 }
 
-.tools1 .swiper-pagination-bullets {
+.tools .swiper-pagination-bullets {
   display: none;
 }
 
@@ -538,16 +534,15 @@ svg {
   margin-left: 10px;
   margin-top: 20px;
 }
-
-.tools1 {
+.swiper3 {
   width: 100%;
-  height: 60%;
-  padding-left: 20px;
-  border-radius: 5px;
-  margin-top: 30px;
+  overflow: hidden;
   position: relative;
+  padding-left: 20px;
 }
-
+.s3{
+  width: 5%!important;
+}
 .ss3 {
   width: 170px !important;
   height: 165px !important;
@@ -578,9 +573,9 @@ svg {
 }
 
 /*left section of middle part start ===================================== */
-.ss1 img,
+/* .ss1 img, */
 .swiper-slide img {
-  object-fit: cover
+  object-fit: fill
 }
 
 .ss1 img,
@@ -680,6 +675,9 @@ svg {
   height: 500px;
   overflow: hidden
 }
+.upcoming img {
+  object-fit: fill;
+}
 
 .upcoming .swiper-pagination-bullets {
   display: none;
@@ -751,7 +749,7 @@ svg {
   position: absolute;
   padding: 2px 120px 2px 120px;
   background-color: #F2F3F8;
-  margin-left: 13%;
+  margin-left: 6%;
   border: none;
   box-shadow: 0px 0px 3px 0px black;
   opacity: 9;
@@ -778,19 +776,19 @@ svg {
   overflow: hidden;
   margin-top: 120px;
   position: relative;
+
 }
 
 .ss2 {
   width: 100%;
-  height: 80%;
-  padding: 5px;
-
+  height: 350px;
 }
 
 .ss2 img {
   width: 100%;
   height: 100%;
   margin-top: -10px;
+  object-fit: fill;
 }
 
 .ss2 img:hover {
@@ -800,6 +798,18 @@ svg {
 
 .swiper2 .swiper-pagination-bullets {
   display: none;
+}
+/* new update======================================= */
+@media only screen and (max-width:768px){
+  .swiper2 {
+    margin-top: 95px;
+    height: 350px;
+    }
+  .ss2 {
+    width: 100%;
+    height: 315px;
+  }
+  
 }
 
 /*left section of middle part ends ===================================== */
@@ -846,14 +856,11 @@ svg {
 }
 
 #box1button {
-  padding: 7px 90px;
   font-size: 17px;
   font-weight: 600;
   color: #fff;
-  margin-left: 8.5px;
-  margin-top: -20px;
+  width: 100%;
   border: 5px solid #fff;
-  top: 285px;
   background-color: #004fb1
 }
 
@@ -1075,7 +1082,7 @@ svg {
 
 /* common sidenav for mobile view=============== */
 /* scnd navbar hanger on 1st page mobile view start-----------------------------------------------------------  */
-@media only screen and (min-width:765px) and (max-width:1080px) {
+@media only screen and (min-width:768.9px) and (max-width:1080px) {
   #nav2 {
     top: 380px !important
   }
@@ -1283,8 +1290,10 @@ bottom: 0.5px!important;
   }
 
   #callback {
-    padding: 6px 70px 6px 70px;
-    margin-left: 10px;
+    width: 80%;
+    height: 7%;
+    padding: 0px 5px 0px 5px;
+    left: 5%;
     font-size: 12px;
   }
 

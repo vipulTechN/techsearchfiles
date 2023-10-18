@@ -6,15 +6,9 @@
   content="real estate consultant in bangalore, best real estate platform in Bangalore, real estate broker in Bangalore, real estate platform in Bangalore, property management company in  bangalore">
 <meta data-react-helmet="true" name="description"
   content="Search Homes India is the best real estate platform in Bangalore that can help in buying or selling properties with the financial support and experts advice">
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-  <!-- Vendor CSS Files -->
-  <link rel="stylesheet" href="{%static 'css/swiper-bundle1.css'%}"/>
-  <link rel="stylesheet" href="{%static 'css/new-index.css'%}">
-  <link rel="stylesheet" href="{%static 'css/grid.css'%}">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/shiicons.css' %}">
+  <!-- External Css Start -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/grid.css' %}">
+  <!-- External Css End -->
 {% endblock %}
 {%block body_block%}
   <style>
@@ -45,93 +39,8 @@
         display: none;
       }
     }
-    .imagesIcon {
-      background: url("{% static 'images/toolsimg.jpg'%}");
-    width: 70px;
-    height: 70px;
-    background-size: 1560px 149px;
-    display: inline-block;
-    vertical-align: middle;
-    font-style: normal;
-    background-repeat: no-repeat;
-    }
-.imagesIcon.icon_thum {
-    background-position: -983px -40px;
-}
-.imagesIcon.icon_thum1 {
-    background-position: -190px -40px;
-}
-.imagesIcon.icon_thum2 {
-    background-position: -358px -40px;
-}
-.imagesIcon.icon_thum3 {
-    background-position: -758px -40px;
-}
-.imagesIcon.icon_thum4{
-    background-position: -543px -40px;
-}
-#header1 {
-  top: -65px;
-}
-.ShiIcons {
-  background: url("{% static 'images/SHIicons2.png'%}");
-    width: 24px;
-    height: 24px;
-    background-size: 450px 287px;
-    display: inline-block;
-    vertical-align: middle;
-    font-style: normal;
-    background-repeat: no-repeat;
-    }
-
-.ShiIcons.icon_toggle {
-    background-position: -346px -24px;
-}
-.index_menu1{
-  right: 16px;
-}
-.ShiIcons.icon_user {
-  background-position: -160px -120px;
-}
-.ShiIcons.icon_user1 {
-  background-position: 0px -95px;
-}
-.ShiIcons.icon_search {
-  background-position: -27px 0px;
-  margin-left: 15px;
-}
-.ShiIcons.icon_search1 {
-  background-position: -1px -71px;
-}
-.ShiIcons.icon_voiceicon {
-  background-position: -286px -98px;
-position: absolute;
-right: 160px; 
-bottom: 17px;
-}
-.ShiIcons.icon_voiceicon1 {
-  background-position: -128px -120px;
-}
-.ShiIcons.icon_cross {
-  background-position: -400px -24px;
-  margin-right: -10px;
-  margin-top: -3px;
-}
-.ShiIcons.icon_phonecall{
-  background-position: -162px -240px;
-}
-.ShiIcons.icon_phonecall1{
-  background-position: -187px -240px;
-}
-
-.ShiIcons.icon_cross1 {
-  background-position: 0px -20px;
-}
-.grid-heading{
-  text-align: center;
-}
-.grid-heading h2{
-  font-size: 30px; font-weight: 800; margin-bottom: 30px;
+.changedrop{
+  margin-top: 0px;
 }
   </style>
 </head>
@@ -143,7 +52,7 @@ bottom: 17px;
       <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
           <div class="logo">
-            <a href="index.html"><img src="{%static 'images/SHI.png'%}" loading="lazy" alt="logo" class="img-fluid"></a>
+            <a href="index.html"><img src="{% static 'images/SHI.png'%}" loading="lazy" alt="logo" class="img-fluid"></a>
           </div>
           <nav id="navbar  " class="navbar">
             <a href="#."><button type="button">About</button></a>
@@ -154,8 +63,8 @@ bottom: 17px;
           </nav><!-- .navbar -->
           <a class="gets2" style="cursor:pointer;"><button type="button">Property Posting<sup>Free</sup></button></a>
           <li class="user_menu1">
-            <div class="dropdown">
-              <a href="" style="color: white;"><i class="ShiIcons icon_user" style="cursor: pointer;"></i></a>
+            <div class="dropdown changedrop">
+              <a href="#." style="color: white;"><i class="ShiIcons icon_user" style="cursor: pointer;"></i></a>
               <div class="dropdown-content">
                 <a href="#">
                   <h6> LOGIN/REGISTER</h6>
@@ -201,7 +110,7 @@ bottom: 17px;
       <form id="SearchForm" action="/propertylist/" method="get">
         {% csrf_token %}
         <div id="nav2" onclick="openNav1()">
-          <div id="up" style="background-image: url("{% static 'images/nav2-bg.png' %}");">
+          <div id="up">
             <h5 class="menu--item__one"><a>Buy</a></h5>
             <h5 class="menu--item__two"><a>Sell</a></h5>
             <h5 class="menu--item__three"><a>Rent</a></h5>
@@ -210,6 +119,10 @@ bottom: 17px;
             <h5 class="menu--item__six"><a>Agriculture</a></h5>
             <li class="bottom__line"></li>
           </div>
+          <script>
+            var upElement = document.getElementById("up");
+            upElement.style.backgroundImage = "url('{% static 'images/nav2-bg.png' %}')";
+        </script>
           <div id="down">
             <div id="credential">
               <select class=" dropdown form-select " aria-label="Default select example">
@@ -235,7 +148,7 @@ bottom: 17px;
               <a href="#">Rent</a>
               <a href="#">Commercial</a>
             </div>
-            <li> <i class="ShiIcons icon_search1"></i><input type="text"  id="query" name="query" placeholder="Search your dream with us"></li>
+            <li> <i class="ShiIcons icon_search1"></i><input type="text"  id="query1" name="query" placeholder="Search your dream with us"></li>
           </div>
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()"><i class="ShiIcons icon_cross1"></i></a>
           <a class="tele1" href="tel:123-456-7890"> <i class="ShiIcons icon_phonecall"></i>
@@ -254,12 +167,12 @@ bottom: 17px;
         <div class="cmmnheading ch1">
           <h4>SHI Offers and Tools</h4>
         </div>
-        <div class="tools1">
+        <!-- <div class="tools1"> -->
           <div class="swiper3 mySwiper5">
             <div class="swiper-wrapper s3">
               <div class="swiper-slide ss3">
                 <a href="">
-                  <div class="cover"><img src="{%static 'images/p9_500.jpg'%}" alt=""></div>
+                  <div class="cover"><img src="{% static 'images/p9_500.jpg'%}" alt=""></div>
                 </a>
                 <h5>Home Interiors</h5>
               </div>
@@ -295,25 +208,25 @@ bottom: 17px;
               </div>
               <div class="swiper-slide ss3">
                 <a href="">
-                  <div class="cover"><img src="{%static 'images/e8_500.jpg'%}" alt=""></div>
+                  <div class="cover"><img src="{% static 'images/e8_500.jpg'%}" alt=""></div>
                 </a>
                 <h5>Packers and Movers</h5>
               </div>
               <div class="swiper-slide ss3">
                 <a href="">
-                  <div class="cover"><img src="{%static 'images/p7_500.jpg'%}" alt=""></div>
+                  <div class="cover"><img src="{% static 'images/p7_500.jpg'%}" alt=""></div>
                 </a>
                 <h5>SHI preminum</h5>
               </div>
               <div class="swiper-slide ss3">
                 <a href="">
-                  <div class="cover"><img src="{%static 'images/p9_500.jpg'%}" alt=""></div>
+                  <div class="cover"><img src="{% static 'images/p9_500.jpg'%}" alt=""></div>
                 </a>
                 <h5>Property management</h5>
               </div>
               <div class="swiper-slide ss3">
                 <a href="">
-                  <div class="cover"><img src="{%static 'images/e2_500.jpg'%}" alt=""></div>
+                  <div class="cover"><img src="{% static 'images/e2_500.jpg'%}" alt=""></div>
                 </a>
                 <h5>Pay on credit</h5>
               </div>
@@ -322,33 +235,32 @@ bottom: 17px;
             <div class=" prevbut swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
    <!-- tools and offers section start======================================================================= -->
-   
-<!-- grid section start========================================================================== -->
+      <!-- grid section start========================================================================== -->
 <div class="grid-heading">
   <h2>Top Cities </h2>
 </div>
 
   <div class="grid-container">
     <div class="grid-item item1">
-      <a href=""> <img src="{%static 'images/Bangalore.jpg'}" alt=""></a>
+      <a href=""> <img src="{% static 'images/Bengaluru.jpg' %}" alt=""></a>
     </div>
     <div class="grid-item item2">
-        <a href=""><img src="{%static 'images/Chennai.jpg'}" alt=""></a>
+        <a href=""><img src="{% static 'images/Chennai.jpg' %}" alt=""></a>
     </div>
     <div class="grid-item item3 ">
-        <a href=""><img src="{%static 'images/Hyderabad.jpg'}"alt=""></a>
+        <a href=""><img src="{% static 'images/Hyderabad.jpg' %}"alt=""></a>
     </div>
     <div class="grid-item item4">
-        <a href=""><img src="{%static 'images/Mumbai.jpg'}" alt=""></a>
+        <a href=""><img src="{% static 'images/Mumbai.jpg' %}" alt=""></a>
     </div>
     <div class="grid-item item5">
-        <a href=""><img src="{%static 'images/Delhi.jpg'}" alt=""></a>
+        <a href=""><img src="{% static 'images/Delhi.jpg' %}" alt=""></a>
     </div>
     <div class="grid-item item6">
-        <a href=""><img src="{%static 'images/Pune.jpg'}" alt=""></a>
+        <a href=""><img src="{% static 'images/Pune.jpg' %}" alt=""></a>
     </div>
 </div>
 <div class="swiper4 mySwiper6 "> 
@@ -358,22 +270,22 @@ bottom: 17px;
   </div>
   <div class="swiper-wrapper s4">
     <div class=" swiper-slide ss4">
-      <a href=""> <img src="{%static 'images/Bangalore.jpg'}" alt=""></a>
+      <a href=""> <img src="{% static 'images/Bengaluru.jpg' %}" alt=""></a>
     </div> <!-- end section -->        
     <div class=" swiper-slide ss4">
-      <a href=""><img src="{%static 'images/Chennai.jpg'}" alt=""></a>
+      <a href=""><img src="{% static 'images/Chennai.jpg' %}" alt=""></a>
     </div> <!-- end section -->        
     <div class=" swiper-slide ss4">
-      <a href=""><img src="{%static 'images/Hyderabad.jpg'}"alt=""></a>
+      <a href=""><img src="{% static 'images/Hyderabad.jpg' %}"alt=""></a>
     </div> <!-- end section -->        
     <div class=" swiper-slide ss4">
-      <a href=""><img src="{%static 'images/Mumbai.jpg'}" alt=""></a>
+      <a href=""><img src="{% static 'images/Mumbai.jpg' %}" alt=""></a>
     </div> <!-- end section -->        
     <div class=" swiper-slide ss4">
-      <a href=""><img src="{%static 'images/Delhi.jpg'}" alt=""></a>
+      <a href=""><img src="{% static 'images/Delhi.jpg' %}" alt=""></a>
     </div> <!-- end section -->        
     <div class=" swiper-slide ss4">
-      <a href=""><img src="{%static 'images/Pune.jpg'}" alt=""></a>
+      <a href=""><img src="{% static 'images/Pune.jpg' %}" alt=""></a>
     </div> <!-- end section -->        
     
   </div>
@@ -382,7 +294,6 @@ bottom: 17px;
   <div class="swiper-pagination"></div>
 </div>
 <!-- grid section end========================================================================== -->
-
       <!-- left part of middle start =============================================== -->
       <div class="midleft">
         <!-- swiper-pagination 1 start================================== -->
@@ -393,55 +304,55 @@ bottom: 17px;
           </div><!-- end section -->
           <div class="swiper-wrapper">
             <div class=" swiper-slide">
-              <a href=""> <img src="{%static 'images/p1_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/p1_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div> <!-- end section -->
             <div class=" swiper-slide">
-              <a href=""><img src="{%static 'images/p2_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""><img src="{% static 'images/p2_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class=" swiper-slide">
-              <a href=""> <img src="{%static 'images/p3_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/p3_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""><img src="{%static 'images/p4_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""><img src="{% static 'images/p4_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""> <img src="{%static 'images/p5_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/p5_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""><img src="{%static 'images/p6_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""><img src="{% static 'images/p6_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""> <img src="{%static 'images/p7_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/p7_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""> <img src="{%static 'images/p8_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/p8_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""> <img src="{%static 'images/p9_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/p9_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
@@ -460,55 +371,55 @@ bottom: 17px;
           </div>
           <div class="swiper-wrapper">
             <div class=" swiper-slide">
-              <a href=""> <img src="{%static 'images/e1_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/e1_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class=" swiper-slide">
-              <a href=""> <img src="{%static 'images/e2_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/e2_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class=" swiper-slide">
-              <a href=""> <img src="{%static 'images/e3_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/e3_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""><img src="{%static 'images/e4_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""><img src="{% static 'images/e4_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""><img src="{%static 'images/e5_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""><img src="{% static 'images/e5_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""> <img src="{%static 'images/e6_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/e6_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""><img src="{%static 'images/e7_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""><img src="{% static 'images/e7_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""><img src="{%static 'images/e8_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""><img src="{% static 'images/e8_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""><img src="{%static 'images/e9_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""><img src="{% static 'images/e9_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
@@ -527,55 +438,55 @@ bottom: 17px;
           </div>
           <div class="swiper-wrapper">
             <div class=" swiper-slide">
-              <a href=""> <img src="{%static 'images/p1_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/p1_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class=" swiper-slide">
-              <a href=""> <img src="{%static 'images/p2_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/p2_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class=" swiper-slide">
-              <a href=""><img src="{%static 'images/e3_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""><img src="{% static 'images/e3_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""> <img src="{%static 'images/p4_500.jpg'%}" loading="lazy" alt=""> </a>
+              <a href=""> <img src="{% static 'images/p4_500.jpg'%}" loading="lazy" alt=""> </a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""> <img src="{%static 'images/p5_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/p5_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""> <img src="{%static 'images/e6_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/e6_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""><img src="{%static 'images/p7_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""><img src="{% static 'images/p7_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""><img src="{%static 'images/e8_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""><img src="{% static 'images/e8_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
             </div><!-- end section -->
             <div class="swiper-slide">
-              <a href=""> <img src="{%static 'images/p9_500.jpg'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/p9_500.jpg'%}" loading="lazy" alt=""></a>
               <h5>4bhk luxury villa</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h6>Price 1cr onwards</h6>
@@ -606,7 +517,7 @@ bottom: 17px;
                   <h6>$1cr-3.5cr</h6>
                  </div>
                 </div>
-                <img src="{%static 'images/e1_500.jpg'%}" loading="lazy" alt="">
+                <img src="{% static 'images/e1_500.jpg'%}" loading="lazy" alt="">
               </a>
               </div>
               <div class=" swiper-slide ss1">
@@ -621,7 +532,7 @@ bottom: 17px;
                      <h6>$60lkhs-2.5cr</h6>
                     </div>
                    </div>
-                  <img src="{%static 'images/p4_500.jpg'%}" loading="lazy" alt="">
+                  <img src="{% static 'images/p4_500.jpg'%}" loading="lazy" alt="">
                 </a>
               </div>
               <div class=" swiper-slide ss1">
@@ -636,7 +547,7 @@ bottom: 17px;
                      <h6>$1.1cr-4.3cr</h6>
                     </div>
                    </div>
-                   <img src="{%static 'images/p5_500.jpg'%}" loading="lazy" alt=""> 
+                   <img src="{% static 'images/p5_500.jpg'%}" loading="lazy" alt=""> 
                   
                 </a>
               </div>
@@ -645,10 +556,10 @@ bottom: 17px;
             <div class="prevbut swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
           </div>
-          <button id="callback" type="submit">
-            <h6>We Would Love To Help You</h6><i class="ShiIcons icon_phonecall"></i>Request a Callback
-          </button>
         </div>
+        <button id="callback" type="submit">
+          <h6>We Would Love To Help You</h6><i class="ShiIcons icon_phonecall"></i>Request a Callback
+        </button>
         <!-- swiper-pagination 4 end================================== -->
         <!-- swiper-pagination 5 end================================== -->
         <div class="swiper2 mySwiper4 ">
@@ -658,29 +569,29 @@ bottom: 17px;
           </div>
           <div class="swiper-wrapper s2">
             <div class=" swiper-slide ss2">
-              <a href=""> <img src="{%static 'images/A1.webp'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/A1.webp'%}" loading="lazy" alt=""></a>
 
             </div> <!-- end section -->
             <div class=" swiper-slide ss2">
-              <a href=""><img src="{%static 'images/A2.webp'%}" loading="lazy" alt=""></a>
+              <a href=""><img src="{% static 'images/A2.webp'%}" loading="lazy" alt=""></a>
 
             </div><!-- end section -->
             <div class=" swiper-slide ss2">
-              <a href=""> <img src="{%static 'images/A3.webp'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/A3.webp'%}" loading="lazy" alt=""></a>
 
             </div><!-- end section -->
             <div class="swiper-slide ss2">
-              <a href=""><img src="{%static 'images/A4.webp'%}" loading="lazy" alt=""></a>
+              <a href=""><img src="{% static 'images/A4.webp'%}" loading="lazy" alt=""></a>
 
             </div><!-- end section -->
             <div class="swiper-slide ss2">
-              <a href=""> <img src="{%static 'images/A5webp'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/A5.webp'%}" loading="lazy" alt=""></a>
             </div><!-- end section -->
             <div class="swiper-slide ss2">
-              <a href=""> <img src="{%static 'images/A6.webp'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/A6.webp'%}" loading="lazy" alt=""></a>
             </div><!-- end section -->           
              <div class="swiper-slide ss2">
-              <a href=""> <img src="{%static 'images/A7.webp'%}" loading="lazy" alt=""></a>
+              <a href=""> <img src="{% static 'images/A7.webp'%}" loading="lazy" alt=""></a>
             </div><!-- end section -->          
           </div>
           <div class="nextbut swiper-button-next"></div>
@@ -693,12 +604,12 @@ bottom: 17px;
       <!-- right part of middle start=============================================== -->
       <div class="midright">
         <div class="box1"> <!-- section start======== -->
-          <a href=""><img src="{%static 'images/p6_500.jpeg'%}" alt=""></a>
+          <a href=""><img src="{% static 'images/p6_500.jpg'%}" alt=""></a>
           <a href=""><button id="box1button">LOGIN\REGISTER</button></a>
         </div><!-- end section ======== -->
         <div class="box2">
           <a href=""><img
-              src="{%static 'images/invest.png'%}"
+              src="{% static 'images/invest.png'%}"
               alt=""></a>
         </div><!-- end  section ======== -->
         <div class="box3">
@@ -708,16 +619,16 @@ bottom: 17px;
                   src="{% static 'images/prestige.jpg'%}"
                   alt=""></a></div>
             <div class="topb"><a href=""><img
-                  src="{%static 'images/godrej.png'%}"
+                  src="{% static 'images/godrej.png'%}"
                   alt=""></a></div>
             <div class="topb"><a href=""><img
-                  src="{%static 'images/Shobha.png'%}" alt=""></a>
+                  src="{% static 'images/Shobha.png'%}" alt=""></a>
             </div>
             <div class="topb"><a href=""><img
-                  src="{%static 'images/assetz.jpeg'%}"
+                  src="{% static 'images/assetz.jpeg'%}"
                   alt=""></a></div>
             <div class="topb"><a href=""><img
-                  src="{%static 'images/tvs.png'%}"
+                  src="{% static 'images/tvs.png'%}"
                   alt=""></a></div>
           </div>
         </div><!-- end section ======== -->
@@ -727,7 +638,6 @@ bottom: 17px;
     <!-- middle section end======================================================================= -->
   </main>
   <!-- Vendor JS Files -->
-  <script src="{%static 'js/swiper-bundle1.js'%}"></script>
-  <script src="{%static 'js/new-index.js'%}"></script>
-  <script src="{%static 'js/new-header.js'%}"></script>
+  <script src="{% static 'js/swiper-bundle1.js'%}"></script>
+  <script src="{% static 'js/new-index.js'%}"></script>
 {% endblock %} 
