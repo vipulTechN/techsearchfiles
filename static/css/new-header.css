@@ -32,13 +32,13 @@ height: 65px;
 top: 0;
 z-index: 10;
 }
-
-#header .logo img {
-padding: 0;
-margin-top: 12px;
-max-height: 57px
+#header .logo{
+  position: absolute;
+left: 4%;
 }
-
+#header .logo img {
+  max-height: 57px
+}
 img,
 svg {
 vertical-align: middle

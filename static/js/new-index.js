@@ -233,5 +233,8 @@ function initializeSwiper4(selector, slidesPerView, spaceBetween) {
     },
   });
 }
-var swiper7 = initializeSwiper4(".mySwiper6", 3, 20);
+var swiper6 = initializeSwiper4(".mySwiper6", 3, 20);
+var swiper7 = initializeSwiper4(".mySwiper7", 3, 30);
+var swiper8 = initializeSwiper4(".mySwiper8", 3, 20);
+var swiper9 = initializeSwiper4(".mySwiper9", 3, 20);
 // grid Swiper End ==========================================

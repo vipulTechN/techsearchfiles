@@ -56,19 +56,7 @@ html {
 .navbar {
   list-style: none
 }
-/* 
-#header {
-  background: 0 0;
-  height: 65px;
-  top: 0;
-  z-index: 50
-} */
 
-#header .logo img {
-  padding: 0;
-  margin-top: 12px;
-  max-height: 57px
-}
 
 img,
 svg {
@@ -115,7 +103,7 @@ svg {
   box-shadow: 0 2px 14px -1px #000;
   position: absolute;
   z-index: 1;
-
+margin-top: 12px;
 }
 
 .tele,
@@ -378,20 +366,20 @@ svg {
 }
 
 .bottom__active1 {
-  transform: translate3d(155%, 0, 0);
+  transform: translate3d(152%, 0, 0);
 }
 
 .bottom__active2 {
-  transform: translate3d(315%, 0, 0);
+  transform: translate3d(308%, 0, 0);
 }
 
 .bottom__active3 {
-  transform: translate3d(319%, 0, 0);
+  transform: translate3d(311%, 0, 0);
   width: 120px !important
 }
 
 .bottom__active4 {
-  transform: translate3d(830%, 0, 0);
+  transform: translate3d(828%, 0, 0);
   left: -50% !important;
   width: 125px !important
 }
@@ -401,7 +389,6 @@ svg {
   left: -71.5% !important;
   width: 130px !important
 }
-
 #credential {
   width: 25%;
   height: auto;
@@ -544,7 +531,6 @@ svg {
   width: 5%!important;
 }
 .ss3 {
-  width: 170px !important;
   height: 165px !important;
   border-radius: 34px !important;
   background-color: white;
@@ -553,6 +539,7 @@ svg {
 }
 
 .ss3 h5 {
+  margin-top:105px!important;
   font-size: 15px !important;
   font-weight: 600 !important;
 }
@@ -560,11 +547,12 @@ svg {
 .cover {
   width: 70px;
   height: 70px;
-  margin-left: 50px;
-  margin-top: 20px;
+  position: absolute;
+  top:35%;
+  left:50%; 
+  transform: translate(-50%,-50%);
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 15px;
 }
 
 .ss3 img {
@@ -811,7 +799,6 @@ svg {
   }
   
 }
-
 /*left section of middle part ends ===================================== */
 /* right section of middle part start ===================================== */
 .box1 img,
